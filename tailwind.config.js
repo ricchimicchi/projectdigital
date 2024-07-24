@@ -15,8 +15,25 @@ const config = {
             "1xl": { max: "500px" },
             "bm": { max: "620px" },
         },
+        extend: {
+            backgroundImage: {
+                'gradient-mask-t': 'linear-gradient(0deg, transparent, #060d14)',
+                'gradient-mask-l-dark': 'linear-gradient(0deg, transparent, #ffffff)',
+            },
+            maskImage: {
+                'gradient-mask-t': 'linear-gradient(180deg, #060d14 24%, transparent)',
+                'gradient-mask-l-dark': 'linear-gradient(180deg, #ffffff 24%, transparent)',
+            },
+        },
+    },
+    variants: {
+        extend: {
+            backgroundImage: ['dark'],
+            maskImage: ['dark'],
+        },
     },
     plugins: [],
     darkMode: "class",
 };
+
 export default config;
