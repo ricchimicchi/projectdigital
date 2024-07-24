@@ -27,8 +27,8 @@ export default function Home() {
           <span className={`${inter.className} dark:text-white/50 text-sm font-medium block text-center mb-3`}>
             A STEP-BY-STEP PATH
           </span>
-          <h1 className={`${anton.className} text-center headline text-6xl 1xl:text-5xl font-bold text-white dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
-          <h1 className={`${anton.className} text-center text-6xl 1xl:text-5xl font-bold text-black dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>
+          <h1 className={`${anton.className} text-center !leading-[53px] headline text-6xl 1xl:text-5xl font-bold text-white dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
+          <h1 className={`${anton.className} text-center !leading-[53px] text-6xl 1xl:text-5xl font-bold text-black dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>
         </div>
       </section>
     </div>
