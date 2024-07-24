@@ -22,7 +22,7 @@ export default function Home() {
           height={1000}
           alt="back"
         />
-        <div className="pt-2">
+        <div className="pt-10">
           <span className={`${inter.className} dark:text-white/50 text-sm font-medium block text-center`}>
             A STEP-BY-STEP PATH
           </span>
