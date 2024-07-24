@@ -13,7 +13,6 @@
 }
 
 .headline {
-    margin: 0 auto;
     background-image: url("https://www.jointherealworld.com/revamp/images/heading-texture_1heading-texture.webp"), linear-gradient(125deg, #fff 85%, rgba(255, 255, 255, 0));
     background-position: bottom;
     background-repeat: no-repeat;
