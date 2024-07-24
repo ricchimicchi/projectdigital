@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.mask-t {
+    background: linear-gradient(0deg, transparent, #060d14);
+    -webkit-mask-image: linear-gradient(180deg, #060d14 24%, transparent);
+}
