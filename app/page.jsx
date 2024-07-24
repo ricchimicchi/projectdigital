@@ -23,8 +23,8 @@ export default function Home() {
           height={1000}
           alt="back"
         />
-        <div className="pt-10 px-2">
-          <span className={`${inter.className} dark:text-white/50 text-sm font-medium block text-center mb-3`}>
+        <div className="pt-8 px-2">
+          <span className={`${inter.className} dark:text-white/50 text-sm font-medium block text-center mb-3 1xl:mb-2`}>
             A STEP-BY-STEP PATH
           </span>
           <h1 className={`${anton.className} text-center headline text-6xl 1xl:text-5xl font-bold text-white mt-6 dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
