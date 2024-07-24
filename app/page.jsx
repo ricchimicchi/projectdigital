@@ -1,7 +1,8 @@
-import { Inter_Tight } from "next/font/google";
+import { Inter_Tight, Anton } from "next/font/google";
 import Image from "next/image";
 
 const inter = Inter_Tight({ subsets: ["latin"] });
+const anton = Anton({ subsets: ["latin"], weight: ['400'] });
 
 export default function Home() {
   return (
@@ -23,9 +24,10 @@ export default function Home() {
           alt="back"
         />
         <div className="pt-10">
-          <span className={`${inter.className} dark:text-white/50 text-sm font-medium block text-center`}>
+          <span className={`${inter.className} dark:text-white/50 text-sm font-medium block text-center mb-3`}>
             A STEP-BY-STEP PATH
           </span>
+          <h1 className={`${anton.className} text-center headline text-4xl font-bold text-white mt-6`}>2024 IS YOUR LAST CHANCE</h1>
         </div>
       </section>
     </div>
