@@ -7,7 +7,7 @@ const anton = Anton({ subsets: ["latin"], weight: ['400'] });
 export default function Home() {
   return (
     <div className="back_main">
-      <div class="mask-l dark:mask-t pointer-events-none h-[84px] relative z-50 w-full select-none backdrop-blur-[1px]"></div>
+      <div class="mask-l dark:mask-t pointer-events-none h-[84px] 1xl:h-[60px] relative z-50 w-full select-none backdrop-blur-[1px]"></div>
       <section className="relative -mt-20 2xl:-mt-10">
         <Image
           src='/back-hero.svg'
@@ -24,11 +24,11 @@ export default function Home() {
           alt="back"
         />
         <div className="pt-8 px-2">
-          <span className={`${inter.className} dark:text-white/50 text-sm font-medium block text-center mb-3 1xl:mb-2`}>
+          <span className={`${inter.className} dark:text-white/50 text-sm font-medium block text-center mb-3`}>
             A STEP-BY-STEP PATH
           </span>
-          <h1 className={`${anton.className} text-center headline text-6xl 1xl:text-5xl font-bold text-white mt-6 dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
-          <h1 className={`${anton.className} text-center text-6xl 1xl:text-5xl font-bold text-black mt-6 dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>
+          <h1 className={`${anton.className} text-center headline text-6xl 1xl:text-5xl font-bold text-white dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
+          <h1 className={`${anton.className} text-center text-6xl 1xl:text-5xl font-bold text-black dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>
         </div>
       </section>
     </div>
