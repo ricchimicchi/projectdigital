@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="">
-    <body className={`${inter.className} dark:bg-[#060d14] bg-white transition-all`}>
+    <body className={`${inter.className} dark:bg-[#060d14] bg-white transition-all select-none`}>
         <ThemeProvider>
           <Header />
           <main>
