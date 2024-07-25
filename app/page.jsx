@@ -23,12 +23,13 @@ export default function Home() {
           height={1000}
           alt="back"
         />
-        <div className="pt-10 px-2">
+        <div className="pt-20 2xl:pt-10 px-2">
           <span className={`${inter.className} dark:text-white/50 text-sm font-medium block text-center mb-3`}>
             A STEP-BY-STEP PATH
           </span>
           <h1 className={`${anton.className} text-center !leading-[58px] headline text-6xl 1xl:text-5xl font-bold text-white dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
           <h1 className={`${anton.className} text-center !leading-[58px] text-6xl 1xl:text-5xl font-bold text-black dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>
+          <p className={`${inter.className} dark:text-white/50 font-medium text-center mb-3`}>We have already passed the halfway point of 2024, and you! You must change your life now.</p>
         </div>
       </section>
     </div>
