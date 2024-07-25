@@ -36,7 +36,7 @@ export default function Home() {
           <h1 className={`${anton.className} text-center !leading-[58px] text-6xl 1xl:text-5xl font-bold text-black dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>
           <p className={`${inter.className} dark:text-white/50 font-medium text-center mt-2 mb-3`}>We have already passed the halfway point of 2024, and you! <br className="2xl:hidden" /> You must change your life now.</p>
           <div className="mt-7 flex items-center justify-center">
-            <video src={mainHeroVideo} className="relative z-[9999] max-w-[900px] w-full rounded-2xl" autoPlay loop muted></video>
+            <video src="/hero-main-images/main_hero.mp4" className="relative z-[9999] max-w-[900px] w-full rounded-2xl" autoPlay loop muted></video>
           </div>
           <div className="flex items-center justify-center mt-6">
             <Link href={'/'} className={`${inter.className} font-medium text-[15px] block text-center mb-3 px-5 py-2.5 rounded-xl border-[1px] border-black bg-black text-white hover:bg-transparent hover:text-black trs_lg dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:border-white dark:hover:text-white`}>
