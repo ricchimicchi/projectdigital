@@ -48,7 +48,7 @@ export default function Home() {
             />
           </div>
           <div className="flex items-center justify-center mt-4">
-            <Link href={'/'} className={`${inter.className} font-medium text-sm block text-center mb-3 px-4 py-2 rounded-xl border-[1px] border-black bg-black text-white hover:bg-transparent hover:text-black trs_lg dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:border-white dark:hover:text-white`}>
+            <Link href={'/'} className={`${inter.className} font-medium text-[15px] block text-center mb-3 px-5 py-2.5 rounded-xl border-[1px] border-black bg-black text-white hover:bg-transparent hover:text-black trs_lg dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:border-white dark:hover:text-white`}>
               Get Started
             </Link>
           </div>
