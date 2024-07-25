@@ -22,7 +22,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="backdrop-blur-md py-2 px-3">
+            <header className="backdrop-blur-md py-2 px-3 relative z-[9999999]">
                 <div className="max-w-[1200px] mx-auto flex items-center justify-between">
                     <Link href={'/'}>
                         {

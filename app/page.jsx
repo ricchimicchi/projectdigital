@@ -9,7 +9,7 @@ const anton = Zen_Dots({ subsets: ["latin"], weight: ['400'] });
 export default function Home() {
   return (
     <div className="back_main">
-      <div className="mask-l dark:mask-t pointer-events-none h-[84px] 1xl:h-[60px] relative z-50 w-full select-none backdrop-blur-[1px] transition-all"></div>
+      <div className="mask-l dark:mask-t pointer-events-none h-[84px] 1xl:h-[40px] -mt-5 relative z-50 w-full select-none backdrop-blur-[1px] transition-all"></div>
       <section className="relative -mt-20 2xl:-mt-10">
         <Image
           src='/back-hero.svg'
@@ -31,19 +31,19 @@ export default function Home() {
           <span className={`${inter.className} dark:text-white/50 text-sm font-medium block text-center mb-3`}>
             A STEP-BY-STEP PATH
           </span>
-          <h1 className={`${anton.className} text-center !leading-[50px] headline text-5xl 1xl:text-[40px] font-bold text-white dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
-          <h1 className={`${anton.className} text-center !leading-[50px] text-5xl 1xl:text-[40px] font-bold text-black dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>
+          <h1 className={`${anton.className} text-center !leading-[40px] headline text-5xl 1xl:text-4xl font-bold text-white dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
+          <h1 className={`${anton.className} text-center !leading-[40px] text-5xl 1xl:text-4xl font-bold text-black dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>
           <p className={`${inter.className} dark:text-white/50 font-medium text-center mt-2 mb-3`}>We have already passed the halfway point of 2024, and you! <br className="2xl:hidden" /> You must change your life now.</p>
           <div className="mt-7 flex items-center justify-center">
-            <video src="/hero-main-images/hero_main_mm.mp4" className="relative pointer-events-none z-[9999] max-w-[900px] min-h-[400px] object-cover w-full rounded-2xl" autoPlay loop muted playsInline></video>
+            <video src="/hero-main-images/hero_main_mm.mp4" className="relative pointer-events-none z-[9999] max-w-[900px] min-h-[340px] object-cover w-full rounded-2xl" autoPlay loop muted playsInline></video>
           </div>
           <div className="flex items-center justify-center mt-12">
 
 
 
-          <Link href="/" class={`${anton.className} button checkout-btn w-inline-block`}>
-              <div class="button_text">JOIN THE REAL WORLD</div>
-              <div class="circle"></div>
+          <Link href="/" className={`${anton.className} button`}>
+              <div className="button_text 2xl:text-sm">JOIN THE REAL WORLD</div>
+              <div className="circle"></div>
             </Link>
           </div>
         </div>
