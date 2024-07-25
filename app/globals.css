@@ -21,3 +21,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.trs_lg {
+    transition: .2s ease-in-out;
+}
