@@ -1,7 +1,7 @@
 import { Inter_Tight, Anton } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import mainHeroVideo from '../public/hero-main-images/main_hero.mp4';
+import mainHeroVideo from '@/public/hero-main-images/main_hero.mp4';
 
 
 const inter = Inter_Tight({ subsets: ["latin"] });
