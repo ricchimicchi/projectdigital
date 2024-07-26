@@ -15,14 +15,21 @@ export default function Home() {
       <div className="mask-l dark:mask-t pointer-events-none h-[84px] 1xl:h-[40px] -mt-5 relative z-50 w-full select-none backdrop-blur-[1px] transition-all"></div>
       <section className="relative -mt-20 2xl:-mt-10">
         <Image
-          src='/hero-main-images/dotback.png'
-          className="absolute pointer-events-none inset-0 object-cover h-[1000px] 2xl:-mt-8 hidden dark:block opacity-10 2xl:opacity-80"
-          width={10000}
+          src='/back-hero.svg'
+          className="absolute pointer-events-none inset-0 object-cover h-[1000px] 2xl:-mt-8 hidden dark:block opacity-40 2xl:opacity-80"
+          width={3000}
           height={1000}
           alt="back"
           priority={true}
         />
-        
+        <Image
+          src='/back-hero-light.svg'
+          className="absolute pointer-events-none inset-0 object-cover h-[1000px] 2xl:-mt-8 block dark:hidden"
+          width={3000}
+          height={1000}
+          alt="back"
+          priority={true}
+        />
         <div className="pt-20 2xl:pt-10 px-2">
           <span className={` dark:text-white/50 text-sm font-medium block text-center mb-3`}>
             A STEP-BY-STEP PATH
