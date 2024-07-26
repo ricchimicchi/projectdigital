@@ -33,7 +33,7 @@ const StepByStep = () => {
             />
             <Image
                 src='/hero-step/ellipse_1.svg'
-                className="absolute pointer-events-none top-[12rem] 1xl:-left-16 1xl:top-0 opacity-10 1xl:pt-12 2xl:-mt-8 "
+                className="absolute pointer-events-none top-[12rem] 1xl:-left-16 1xl:top-0 dark:opacity-20 opacity-60 1xl:pt-12 2xl:-mt-8 "
                 width={500}
                 height={500}
                 alt="back"
@@ -41,7 +41,7 @@ const StepByStep = () => {
             />
             <Image
                 src='/hero-step/ellipse_2.svg'
-                className="absolute pointer-events-none right-0 bottom-40 1xl:pt-12 2xl:-mt-8 opacity-10 "
+                className="absolute pointer-events-none right-0 bottom-40 1xl:pt-12 2xl:-mt-8 dark:opacity-20 opacity-40 "
                 width={500}
                 height={500}
                 alt="back"
@@ -50,7 +50,7 @@ const StepByStep = () => {
 
             <Image
                 src='/hero-step/ellipse_1.svg'
-                className="absolute pointer-events-none left-[7rem] -bottom-40 1xl:pt-12 2xl:-mt-8 opacity-10 -rotate-45"
+                className="absolute pointer-events-none left-[7rem] -bottom-40 1xl:pt-12 2xl:-mt-8 dark:opacity-20 opacity-60 -rotate-45"
                 width={500}
                 height={500}
                 alt="back"
