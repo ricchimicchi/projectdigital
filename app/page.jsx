@@ -31,7 +31,7 @@ export default function Home() {
           alt="back"
           priority={true}
         />
-        <div className="pt-20 2xl:pt-10 px-2">
+        <div className="pt-32 px-2">
           <span className={` dark:text-white/50 text-sm font-medium block text-center mb-3`}>
             A STEP-BY-STEP PATH
           </span>
