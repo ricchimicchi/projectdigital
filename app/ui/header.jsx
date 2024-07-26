@@ -22,9 +22,9 @@ const Header = () => {
 
     return (
         <>
-            <header className="backdrop-blur-3xl py-2 1xl:py-1 2xl:px-3 fixed top-0 inset-x-0 w-full z-[9999999]">
+            <header className="backdrop-blur-3xl py-2 1xl:py-1 2xl:px-2 fixed top-0 inset-x-0 w-full z-[9999999]">
                 <div className="max-w-[1100px] mx-auto flex items-center justify-between">
-                    <Link href={'/'} className="-ml-4 1xl:ml-0">
+                    <Link href={'/'} className="-ml-4 1xl:-ml-3">
                         {
                             theme === 'dark' ? <Image src='/logo_white.svg' width={60} height={60} alt="header_logo" className="pointer-events-none" /> : <Image src='/logo_black.svg' width={60} height={60} alt="header_logo" className="pointer-events-none" />
                         }

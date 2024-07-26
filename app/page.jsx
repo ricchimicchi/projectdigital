@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BiMoneyWithdraw } from "react-icons/bi";
 import { TbUsersGroup } from "react-icons/tb";
 import WhatIsThis from "./ui/WhatIsThis";
+import StepByStep from "./ui/StepByStep";
 
 
 
@@ -18,7 +19,7 @@ export default function Home() {
         <Image
           src='/back-hero.svg'
           className="absolute pointer-events-none inset-0 object-cover h-[1000px] 2xl:-mt-8 hidden dark:block opacity-40 2xl:opacity-80"
-          width={3000}
+          width={10000}
           height={1000}
           alt="back"
           priority={true}
@@ -26,7 +27,7 @@ export default function Home() {
         <Image
           src='/back-hero-light.svg'
           className="absolute pointer-events-none inset-0 object-cover h-[1000px] 2xl:-mt-8 block dark:hidden"
-          width={3000}
+          width={10000}
           height={1000}
           alt="back"
           priority={true}
@@ -63,6 +64,7 @@ export default function Home() {
           </div>
         </div>
         <WhatIsThis />
+        <StepByStep />
       </section>
     </div>
   );
