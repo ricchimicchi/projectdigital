@@ -54,9 +54,9 @@ export default function Home() {
                   <div className="button_text 2xl:text-sm dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl">JOIN THE OUR WORLD <BiMoneyWithdraw size={21} className="mb-0.5 1xl:mb-[1px]" /></div>
                   <div className="circle"></div>
                 </Link>
-                <div className="flex items-center gap-2 mt-3 justify-center">
+                <div className="flex items-center gap-2 mt-3 1xl:mt-2 justify-center">
                   <TbUsersGroup size={21} />
-                  <span className="text-white/60">
+                  <span className="text-white/60 1xl:text-sm">
                     <span className="text-white font-semibold">10000+ </span>
                     Students in our world
                   </span>
