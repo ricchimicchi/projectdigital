@@ -13,11 +13,20 @@ const WhatIsThis = () => {
                 <h1 className={`${anton.className} max-w-[750px] uppercase text-center mt-3 1xl:mt-1.5 !leading-[50px] 1xl:!leading-[30px] headline text-5xl 1xl:text-[26px] font-bold text-white dark:block hidden`}>Make a fresh start with Our Automation System</h1>
                 <h1 className={`${anton.className} max-w-[750px] uppercase text-center mt-3 1xl:mt-1.5 !leading-[50px] 1xl:!leading-[30px] text-5xl 1xl:text-[26px] font-bold text-black dark:hidden`}>Make a fresh start with Our Automation System</h1>
                 <p className="max-w-[700px] dark:text-white/50 font-medium text-center mt-3 1xl:text-sm leading-[18px]">Our project is specially designed to free you from the complex world of the <span className="dark:text-white text-white/60 font-extrabold underline">Matrix</span>  in a short time and help you achieve a more liberated, more comfortable life.</p>
- 
+
                 <div className="flex items-center justify-center mt-8 1xl:mt-5">
                     <Image
                         src='/hero-two-main/hero-two.svg'
-                        className="pointer-events-none block rounded-2xl"
+                        className="pointer-events-none block rounded-2xl 3xl:hidden"
+                        width={1100}
+                        height={800}
+                        alt="back"
+                        priority={true}
+                    />
+
+                    <Image
+                        src='/hero-two-main/hero-two-mobile.svg'
+                        className="pointer-events-none rounded-2xl 3xl:block hidden"
                         width={1100}
                         height={800}
                         alt="back"
