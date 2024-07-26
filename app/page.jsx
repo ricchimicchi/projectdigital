@@ -56,8 +56,8 @@ export default function Home() {
                 </Link>
                 <div className="flex items-center gap-2 mt-3 1xl:mt-2 justify-center">
                   <TbUsersGroup size={21} />
-                  <span className="dark:text-white/60 1xl:text-sm">
-                    <span className="dark:text-white text-black/60 font-semibold">10000+ </span>
+                  <span className="dark:text-white/60 1xl:text-sm font-medium tracking-tight">
+                    <span className="dark:text-white text-black/60 font-bold">10000+ </span>
                     Students in our world
                   </span>
                 </div>
