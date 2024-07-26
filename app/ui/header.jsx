@@ -30,8 +30,8 @@ const Header = () => {
                         }
                     </Link>
                     <div className="flex items-center gap-4">
-                        <Link target="_blank" href={'/'} className="dark:text-white flex items-center gap-2 px-3 py-1 dark:bg-white/15 bg-black/10 font-medium rounded-full">
-                            Join Community <FaTelegramPlane />
+                        <Link target="_blank" href={'/'} className="dark:text-white flex items-center gap-2 px-3 py-1 dark:bg-white/15 bg-black/10 font-bold tracking-tighter rounded-full">
+                            Join Community <FaTelegramPlane className="mt-[1px]" />
                         </Link>
 
                         <button
