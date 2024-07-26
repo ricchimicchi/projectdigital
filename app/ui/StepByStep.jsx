@@ -13,8 +13,8 @@ const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 
 const StepByStep = () => {
     return (
-        <div className="relative mt-20 1xl:mt-0 overflow-hidden pb-20">
-            <div className="mask-l dark:mask-t pointer-events-none h-[120px] relative z-50 w-full select-none backdrop-blur-[1px] transition-all"></div>
+        <div className="relative mt-20 1xl:mt-0 overflow-hidden 2xl:pb-20">
+            <div className="mask-l dark:mask-t pointer-events-none h-[90px] relative z-50 w-full select-none backdrop-blur-[1px] transition-all"></div>
             <Image
                 src='/back-hero.svg'
                 className="absolute pointer-events-none inset-0 1xl:pt-12 object-cover 2xl:h-[1000px] 2xl:-mt-8 hidden dark:block opacity-40 2xl:opacity-80"
@@ -41,7 +41,7 @@ const StepByStep = () => {
             />
             <Image
                 src='/hero-step/ellipse_2.svg'
-                className="absolute pointer-events-none right-0 bottom-40 1xl:pt-12 2xl:-mt-8 dark:opacity-20 opacity-40 "
+                className="absolute pointer-events-none right-0 bottom-60 1xl:pt-12 2xl:-mt-8 dark:opacity-20 opacity-40 "
                 width={500}
                 height={500}
                 alt="back"
@@ -50,7 +50,7 @@ const StepByStep = () => {
 
             <Image
                 src='/hero-step/ellipse_1.svg'
-                className="absolute pointer-events-none left-[7rem] -bottom-40 1xl:pt-12 2xl:-mt-8 dark:opacity-20 opacity-60 -rotate-45"
+                className="absolute pointer-events-none left-[7rem] -bottom-40 1xl:bottom-3 1xl:pt-12 2xl:-mt-8 dark:opacity-20 opacity-60 -rotate-45"
                 width={500}
                 height={500}
                 alt="back"
