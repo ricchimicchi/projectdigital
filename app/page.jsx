@@ -48,7 +48,7 @@ export default function Home() {
               ></div>
               <div className="relative">
                 <Link href="/" className={`${anton.className} button max-w-[400px] w-full 1xl:rounded-xl`}>
-                  <div className="button_text 2xl:text-sm dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl">JOIN THE OUR WORLD <BiMoneyWithdraw size={21} className="mb-0.5" /></div>
+                  <div className="button_text 2xl:text-sm dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl">JOIN THE OUR WORLD <BiMoneyWithdraw size={21} className="mb-0.5 1xl:mb-[1px]" /></div>
                   <div className="circle"></div>
                 </Link>
               </div>
