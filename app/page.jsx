@@ -47,7 +47,7 @@ export default function Home() {
                 className="absolute -inset-1 rounded-lg bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-indigo-600 0 via-red-600 0 to-amber-600 />0 opacity-50 blur-2xl"
               ></div>
               <div className="relative">
-                <Link href="/" className={`${anton.className} button max-w-[400px] w-full 1xl:rounded-xl`}>
+                <Link href="/" className={`${anton.className} button max-w-[420px] w-full 1xl:rounded-xl flex items-center justify-center`}>
                   <div className="button_text 2xl:text-sm dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl">JOIN THE OUR WORLD <BiMoneyWithdraw size={21} className="mb-0.5 1xl:mb-[1px]" /></div>
                   <div className="circle"></div>
                 </Link>
