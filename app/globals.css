@@ -45,7 +45,7 @@
 }
 
 .button_text {
-    padding: .9rem 4.0rem;
+    padding: .9rem 4.5rem;
     transition: padding .2s;
     display: flex;
     align-items: center;
