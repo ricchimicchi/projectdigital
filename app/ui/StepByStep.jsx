@@ -13,7 +13,7 @@ const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 
 const StepByStep = () => {
     return (
-        <div className="relative mt-20 1xl:mt-0">
+        <div className="relative mt-20 1xl:mt-0 overflow-hidden pb-20">
             <div className="mask-l dark:mask-t pointer-events-none h-[120px] relative z-50 w-full select-none backdrop-blur-[1px] transition-all"></div>
             <Image
                 src='/back-hero.svg'
@@ -28,6 +28,31 @@ const StepByStep = () => {
                 className="absolute pointer-events-none inset-0 1xl:pt-12 object-cover 2xl:h-[1000px] 2xl:-mt-8 block dark:hidden"
                 width={10000}
                 height={2000}
+                alt="back"
+                priority={true}
+            />
+            <Image
+                src='/hero-step/ellipse_1.svg'
+                className="absolute pointer-events-none top-[12rem] 1xl:-left-16 1xl:top-0 opacity-10 1xl:pt-12 2xl:-mt-8 "
+                width={500}
+                height={500}
+                alt="back"
+                priority={true}
+            />
+            <Image
+                src='/hero-step/ellipse_2.svg'
+                className="absolute pointer-events-none right-0 bottom-40 1xl:pt-12 2xl:-mt-8 opacity-10 "
+                width={500}
+                height={500}
+                alt="back"
+                priority={true}
+            />
+
+            <Image
+                src='/hero-step/ellipse_1.svg'
+                className="absolute pointer-events-none left-[7rem] -bottom-40 1xl:pt-12 2xl:-mt-8 opacity-10 -rotate-45"
+                width={500}
+                height={500}
                 alt="back"
                 priority={true}
             />
@@ -130,7 +155,7 @@ const StepByStep = () => {
                         </div>
                     </div>
                 </div>
-                <div className="h-[120vh] w-px bgline 3xl:hidden"></div>
+                <div className="h-[123vh] w-px bgline 3xl:hidden"></div>
                 <div className="mt-[21rem] 3xl:hidden ml-4">
                     <div>
                         <span className="flex items-center gap-3 ml-2">
