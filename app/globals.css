@@ -46,6 +46,9 @@
 }
 
 .button_text {
-    padding: .9rem 4.6rem;
+    padding: .9rem 4.2rem;
     transition: padding .2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
