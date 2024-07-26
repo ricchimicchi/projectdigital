@@ -47,8 +47,8 @@ export default function Home() {
                 className="absolute -inset-2 rounded-lg bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-indigo-600 via-red-600 to-amber-600 opacity-50 blur-2xl"
               ></div>
               <div className="relative">
-                <Link href="/" className={`${anton.className} button max-w-[400px] w-full`}>
-                  <div className="button_text 2xl:text-sm dark:bg-[#41391a] bg-[#7d6b2c3c] ">JOIN THE REAL WORLD</div>
+                <Link href="/" className={`${anton.className} button max-w-[400px] w-full 1xl:rounded-xl`}>
+                  <div className="button_text 2xl:text-sm dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl">JOIN THE REAL WORLD</div>
                   <div className="circle"></div>
                 </Link>
               </div>
