@@ -34,7 +34,7 @@ export default function Home() {
         />
         <div className="pt-32 px-2">
           <span className={` dark:text-white/50 text-sm font-bold block text-center mb-3`}>
-            A STEP-BY-STEP PATH
+            OPEN YOUR EYES NOW
           </span>
           <h1 className={`${anton.className} text-center !leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
           <h1 className={`${anton.className} text-center !leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>

@@ -5,7 +5,7 @@ const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 
 const WhatIsThis = () => {
     return (
-        <div className='mt-44 2xl:mt-7 px-1.5 py-12'>
+        <div className='mt-44 2xl:mt-16 px-1.5 py-12'>
             <div className='flex items-center justify-center flex-col'>
                 <span className='block px-4 py-1 dark:text-white/70 rounded-full text-[14px] font-bold 1xl:text-sm'>
                     WHAT IS THIS ?

@@ -51,3 +51,7 @@
     gap: 12px;
     min-width: 355px !important;
 }
+
+.bgline {
+    background-image: linear-gradient(to top, #ffffffa8, rgba(255, 255, 255, .5) 55%, rgba(255, 255, 255, .12) 79%, rgba(255, 255, 255, 0));
+}
