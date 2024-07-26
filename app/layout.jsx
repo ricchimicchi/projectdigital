@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "./ui/header";
 import { ThemeProvider } from "./providers/ThemeProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Manrope({ subsets: ["latin"], weight: ['200', '300', '400', '500', '600', '700', '800'] });
 
 export const metadata = {
   title: "Daniel Automation",
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="">
-    <body className={`${inter.className} dark:bg-[#060d14] bg-white transition-all select-none`}>
+    <body className={`${inter.className} dark:bg-[#04080c] bg-white transition-all select-none`}>
         <ThemeProvider>
           <Header />
           <main>

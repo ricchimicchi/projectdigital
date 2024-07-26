@@ -4,7 +4,7 @@
 @layer utilities {
     .mask-t {
         @apply bg-gradient-mask-t;
-        -webkit-mask-image: var( --tw-mask-image, linear-gradient(180deg, #060d14 24%, transparent));
+        -webkit-mask-image: var( --tw-mask-image, linear-gradient(180deg, #04080c 24%, transparent));
     }
     .dark .mask-l {
         @apply bg-gradient-mask-l-dark;
@@ -46,7 +46,6 @@
 }
 
 .button_text {
-    background-color: #41391a;
-    padding: .9rem 3.6rem;
+    padding: .9rem 4.4rem;
     transition: padding .2s;
 }

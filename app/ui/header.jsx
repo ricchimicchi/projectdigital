@@ -24,7 +24,7 @@ const Header = () => {
         <>
             <header className="backdrop-blur-md py-2 px-3 relative z-[9999999]">
                 <div className="max-w-[1200px] mx-auto flex items-center justify-between">
-                    <Link href={'/'}>
+                    <Link href={'/'} className="pointer-events-none">
                         {
                             theme === 'dark' ? <Image src='/header_logo.svg' width={50} height={50} alt="header_logo" /> : <Image src='/header_logo_b.svg' width={50} height={50} alt="header_logo" />
                         }
