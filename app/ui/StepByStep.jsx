@@ -45,13 +45,13 @@ const StepByStep = () => {
                 </div>
             </div>
             <div className="flex items-start justify-center max-w-[1100px] mx-auto mt-20 2xl:mt-7">
-                <div className="mt-12 1xl:mt-4">
+                <div className="mt-12 1xl:mt-4 mr-4 3xl:mr-0">
                     <div>
                         <span className="flex items-center gap-3">
                             <TbStairsUp size={28} className="mb-5" />
                             <h3 className={`${syne.className} headline text-2xl 1xl:text-[20px] h-12 uppercase font-bold`}>Success at every step</h3>
                         </span>
-                        <div className="flex flex-col gap-4 items-start">
+                        <div className="flex flex-col gap-[17px] items-start">
                             <span className="flex items-center !min-w-[400px] 1xl:!min-w-[300px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
                                 <RiCheckFill size={23} />
                                 <p className="text-white/60 font-medium text-sm">
@@ -77,7 +77,7 @@ const StepByStep = () => {
                             <FaUsers size={28} className="mb-5" />
                             <h3 className={`${syne.className} headline text-2xl h-12 uppercase font-bold mr-7 1xl:text-[20px]`}>PRIVATE NETWORK</h3>
                         </span>
-                        <div className="max-w-[520px] w-full flex flex-col gap-4 items-start">
+                        <div className="max-w-[520px] w-full flex flex-col gap-[17px] items-start">
                             <span className="flex items-center !min-w-[400px] 1xl:!min-w-[300px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
                                 <RiCheckFill size={23} />
                                 <p className="text-white/60 font-medium text-sm">
@@ -103,7 +103,7 @@ const StepByStep = () => {
                             <TbStairsUp size={28} className="mb-5" />
                             <h3 className={`${syne.className} headline text-2xl h-12 uppercase font-bold 1xl:text-[20px]`}>Success at every step</h3>
                         </span>
-                        <div className="flex flex-col gap-4 items-start">
+                        <div className="flex flex-col gap-[17px] items-start">
                             <span className="flex items-center !min-w-[400px] 1xl:!min-w-[300px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
                                 <RiCheckFill size={23} />
                                 <p className="text-white/60 font-medium text-sm">
@@ -125,14 +125,14 @@ const StepByStep = () => {
                         </div>
                     </div>
                 </div>
-                <div className="h-[140vh] w-px bgline 3xl:hidden"></div>
-                <div className="mt-80 3xl:hidden">
+                <div className="h-[120vh] w-px bgline 3xl:hidden"></div>
+                <div className="mt-[21rem] 3xl:hidden ml-4">
                     <div>
                         <span className="flex items-center gap-3">
                             <FaUsers size={28} className="mb-5" />
                             <h3 className={`${syne.className} headline text-2xl h-12 uppercase font-bold mr-7`}>PRIVATE NETWORK</h3>
                         </span>
-                        <div className="max-w-[520px] w-full flex flex-col gap-4 items-start">
+                        <div className="max-w-[520px] w-full flex flex-col gap-[17px] items-start">
                             <span className="flex items-center !min-w-[400px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
                                 <RiCheckFill size={23} />
                                 <p className="text-white/60 font-medium text-sm">
