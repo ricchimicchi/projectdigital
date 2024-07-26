@@ -24,14 +24,14 @@ const Header = () => {
         <>
             <header className="backdrop-blur-md py-2 px-3 relative z-[9999999]">
                 <div className="max-w-[1200px] mx-auto flex items-center justify-between">
-                    <Link href={'/'} className="pointer-events-none">
+                    <Link href={'/'}>
                         {
-                            theme === 'dark' ? <Image src='/header_logo.svg' width={50} height={50} alt="header_logo" /> : <Image src='/header_logo_b.svg' width={50} height={50} alt="header_logo" />
+                            theme === 'dark' ? <Image src='/header_logo.svg' width={50} height={50} alt="header_logo" className="pointer-events-none" /> : <Image src='/header_logo_b.svg' width={50} height={50} alt="header_logo" className="pointer-events-none" />
                         }
                     </Link>
                     <div className="flex items-center gap-4">
                         <Link target="_blank" href={'/'} className="dark:text-white flex items-center gap-2 px-3 py-1 dark:bg-white/15 bg-black/5 font-medium rounded-full">
-                            Join <FaTelegramPlane />
+                            Join Community <FaTelegramPlane />
                         </Link>
 
                         <button
