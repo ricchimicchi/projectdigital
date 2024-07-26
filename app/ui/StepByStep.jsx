@@ -45,8 +45,7 @@ const StepByStep = () => {
                 </div>
             </div>
             <div className="flex items-start justify-center max-w-[1100px] mx-auto mt-20 2xl:mt-7">
-                <div className="h-[100vh] w-px bgline hidden 3xl:block mr-4 1xl:mr-2"></div>
-                <div className="mt-12">
+                <div className="mt-12 1xl:mt-4">
                     <div>
                         <span className="flex items-center gap-3">
                             <TbStairsUp size={28} className="mb-5" />
