@@ -1,10 +1,11 @@
-import { Inter_Tight, Zen_Dots } from "next/font/google";
+import { Inter_Tight, Audiowide
+} from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 
 
 const inter = Inter_Tight({ subsets: ["latin"] });
-const anton = Zen_Dots({ subsets: ["latin"], weight: ['400'] });
+const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 
 export default function Home() {
   return (
