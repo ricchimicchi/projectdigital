@@ -1,6 +1,12 @@
 import Image from "next/image"
-import { Audiowide } from "next/font/google";
+import { Audiowide, Syne } from "next/font/google";
+import { TbStairsUp } from "react-icons/tb";
+import { RiCheckFill } from "react-icons/ri";
+import { FaUsers } from "react-icons/fa6";
 
+
+
+const syne = Syne({ subsets: ["latin"], weight: ['400', '500', '600', '700', '800'] });
 const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 
 const StepByStep = () => {
@@ -38,10 +44,117 @@ const StepByStep = () => {
                     </h1>
                 </div>
             </div>
-            <div className="flex items-start justify-between max-w-[1100px] mx-auto mt-20">
-                <div>lelele</div>
-                <div className="h-[100vh] w-px bgline"></div>
-                <div>lelele</div>
+            <div className="flex items-start justify-center max-w-[1100px] mx-auto mt-20 2xl:mt-7">
+                <div className="h-[100vh] w-px bgline hidden 3xl:block mr-4 1xl:mr-2"></div>
+                <div className="mt-12">
+                    <div>
+                        <span className="flex items-center gap-3">
+                            <TbStairsUp size={28} className="mb-5" />
+                            <h3 className={`${syne.className} headline text-2xl 1xl:text-[20px] h-12 uppercase font-bold`}>Success at every step</h3>
+                        </span>
+                        <div className="flex flex-col gap-4 items-start">
+                            <span className="flex items-center !min-w-[400px] 1xl:!min-w-[300px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
+                                <RiCheckFill size={23} />
+                                <p className="text-white/60 font-medium text-sm">
+                                    World-class custom built learning application
+                                </p>
+                            </span>
+                            <span className="flex items-center !min-w-[400px] 1xl:!min-w-[300px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
+                                <RiCheckFill size={23} />
+                                <p className="text-white/60 font-medium text-sm">
+                                    World-class custom built learning application
+                                </p>
+                            </span>
+                            <span className="flex items-center !min-w-[400px] 1xl:!min-w-[300px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
+                                <RiCheckFill size={23} />
+                                <p className="text-white/60 font-medium text-sm">
+                                    World-class custom built learning application
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <div className="hidden 3xl:block 3xl:mt-12">
+                        <span className="flex items-center gap-3">
+                            <FaUsers size={28} className="mb-5" />
+                            <h3 className={`${syne.className} headline text-2xl h-12 uppercase font-bold mr-7 1xl:text-[20px]`}>PRIVATE NETWORK</h3>
+                        </span>
+                        <div className="max-w-[520px] w-full flex flex-col gap-4 items-start">
+                            <span className="flex items-center !min-w-[400px] 1xl:!min-w-[300px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
+                                <RiCheckFill size={23} />
+                                <p className="text-white/60 font-medium text-sm">
+                                    World-class custom built learning application
+                                </p>
+                            </span>
+                            <span className="flex items-center !min-w-[400px] 1xl:!min-w-[300px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
+                                <RiCheckFill size={23} />
+                                <p className="text-white/60 font-medium text-sm">
+                                    World-class custom built learning application
+                                </p>
+                            </span>
+                            <span className="flex items-center !min-w-[400px] 1xl:!min-w-[300px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
+                                <RiCheckFill size={23} />
+                                <p className="text-white/60 font-medium text-sm">
+                                    World-class custom built learning application
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <div className="mt-96 3xl:mt-12">
+                        <span className="flex items-center gap-3">
+                            <TbStairsUp size={28} className="mb-5" />
+                            <h3 className={`${syne.className} headline text-2xl h-12 uppercase font-bold 1xl:text-[20px]`}>Success at every step</h3>
+                        </span>
+                        <div className="flex flex-col gap-4 items-start">
+                            <span className="flex items-center !min-w-[400px] 1xl:!min-w-[300px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
+                                <RiCheckFill size={23} />
+                                <p className="text-white/60 font-medium text-sm">
+                                    World-class custom built learning application
+                                </p>
+                            </span>
+                            <span className="flex items-center !min-w-[400px] 1xl:!min-w-[300px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
+                                <RiCheckFill size={23} />
+                                <p className="text-white/60 font-medium text-sm">
+                                    World-class custom built learning application
+                                </p>
+                            </span>
+                            <span className="flex items-center !min-w-[400px] 1xl:!min-w-[300px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
+                                <RiCheckFill size={23} />
+                                <p className="text-white/60 font-medium text-sm">
+                                    World-class custom built learning application
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div className="h-[140vh] w-px bgline 3xl:hidden"></div>
+                <div className="mt-80 3xl:hidden">
+                    <div>
+                        <span className="flex items-center gap-3">
+                            <FaUsers size={28} className="mb-5" />
+                            <h3 className={`${syne.className} headline text-2xl h-12 uppercase font-bold mr-7`}>PRIVATE NETWORK</h3>
+                        </span>
+                        <div className="max-w-[520px] w-full flex flex-col gap-4 items-start">
+                            <span className="flex items-center !min-w-[400px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
+                                <RiCheckFill size={23} />
+                                <p className="text-white/60 font-medium text-sm">
+                                    World-class custom built learning application
+                                </p>
+                            </span>
+                            <span className="flex items-center !min-w-[400px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
+                                <RiCheckFill size={23} />
+                                <p className="text-white/60 font-medium text-sm">
+                                    World-class custom built learning application
+                                </p>
+                            </span>
+                            <span className="flex items-center !min-w-[400px] gap-3 border-[1px] border-[#ffffff36] bg-[#ffffff10] px-3 py-2 rounded-full -mt-2">
+                                <RiCheckFill size={23} />
+                                <p className="text-white/60 font-medium text-sm">
+                                    World-class custom built learning application
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
