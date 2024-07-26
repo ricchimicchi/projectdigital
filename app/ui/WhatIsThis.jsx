@@ -17,7 +17,7 @@ const WhatIsThis = () => {
                 <div className="flex items-center justify-center mt-8 1xl:mt-5">
                     <Image
                         src='/hero-two-main/hero-two.svg'
-                        className="pointer-events-none block rounded-2xl 3xl:hidden"
+                        className="pointer-events-none block rounded-2xl 3xl:hidden border-[2px] 1xl:border-[1px] border-white/40"
                         width={1100}
                         height={800}
                         alt="back"
@@ -26,7 +26,7 @@ const WhatIsThis = () => {
 
                     <Image
                         src='/hero-two-main/hero-two-mobile.svg'
-                        className="pointer-events-none rounded-2xl 3xl:block hidden"
+                        className="pointer-events-none rounded-2xl 3xl:block hidden border-[2px] 1xl:border-[1px] border-white/40"
                         width={1100}
                         height={800}
                         alt="back"
