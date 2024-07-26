@@ -42,7 +42,6 @@
     display: flex;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 30px rgba(255, 187, 56, .21);
 }
 
 .button_text {

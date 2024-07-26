@@ -2,6 +2,9 @@ import { Audiowide } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { BiMoneyWithdraw } from "react-icons/bi";
+import { TbUsersGroup } from "react-icons/tb";
+
+
 
 
 const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
@@ -44,13 +47,20 @@ export default function Home() {
 
             <div className="relative">
               <div
-                className="absolute -inset-2 rounded-lg bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-indigo-600 via-red-600 to-amber-600 opacity-50 blur-2xl"
+                className="absolute -inset-1 rounded-lg bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-indigo-600 0 via-red-600 0 to-amber-600 />0 opacity-50 blur-2xl"
               ></div>
               <div className="relative">
                 <Link href="/" className={`${anton.className} button max-w-[400px] w-full 1xl:rounded-xl`}>
                   <div className="button_text 2xl:text-sm dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl">JOIN THE OUR WORLD <BiMoneyWithdraw size={21} className="mb-0.5 1xl:mb-[1px]" /></div>
                   <div className="circle"></div>
                 </Link>
+                <div className="flex items-center gap-2 mt-3 justify-center">
+                  <TbUsersGroup size={21} />
+                  <span className="text-white/60">
+                    <span className="text-white font-semibold">10000+ </span>
+                    Students in our world
+                  </span>
+                </div>
               </div>
             </div>
           </div>

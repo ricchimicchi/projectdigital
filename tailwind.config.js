@@ -17,11 +17,11 @@ const config = {
         },
         extend: {
             backgroundImage: {
-                'gradient-mask-t': 'linear-gradient(0deg, transparent, #060d14)',
+                'gradient-mask-t': 'linear-gradient(0deg, transparent, #04080c)',
                 'gradient-mask-l-dark': 'linear-gradient(0deg, transparent, #ffffff)',
             },
             maskImage: {
-                'gradient-mask-t': 'linear-gradient(180deg, #060d14 24%, transparent)',
+                'gradient-mask-t': 'linear-gradient(180deg, #04080c 24%, transparent)',
                 'gradient-mask-l-dark': 'linear-gradient(180deg, #ffffff 24%, transparent)',
             },
         },
