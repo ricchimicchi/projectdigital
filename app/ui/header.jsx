@@ -22,11 +22,11 @@ const Header = () => {
 
     return (
         <>
-            <header className="backdrop-blur-md py-2 px-3 fixed top-0 inset-x-0 w-full bg-white/10 dark:bg-white/0 z-[9999999]">
+            <header className="backdrop-blur-md py-2 1xl:py-1 px-3 fixed top-0 inset-x-0 w-full bg-white/10 dark:bg-white/0 z-[9999999]">
                 <div className="max-w-[1200px] mx-auto flex items-center justify-between">
                     <Link href={'/'}>
                         {
-                            theme === 'dark' ? <Image src='/header_logo.svg' width={50} height={50} alt="header_logo" className="pointer-events-none" /> : <Image src='/header_logo_b.svg' width={50} height={50} alt="header_logo" className="pointer-events-none" />
+                            theme === 'dark' ? <Image src='/logo_white.svg' width={60} height={60} alt="header_logo" className="pointer-events-none" /> : <Image src='/logo_black.svg' width={60} height={60} alt="header_logo" className="pointer-events-none" />
                         }
                     </Link>
                     <div className="flex items-center gap-4">
