@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiMoneyWithdraw } from "react-icons/bi";
 import { TbUsersGroup } from "react-icons/tb";
+import WhatIsThis from "./ui/WhatIsThis";
 
 
 
@@ -65,6 +66,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <WhatIsThis />
       </section>
     </div>
   );
