@@ -2,10 +2,12 @@
 import { Audiowide, Syne } from "next/font/google";
 import { costumer_data } from "../providers/costumer_data";
 import Image from "next/image";
-import { TbClick } from "react-icons/tb";
+import { TbClick, TbUsersGroup } from "react-icons/tb";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import Link from "next/link";
+import { BiMoneyWithdraw } from "react-icons/bi";
 
 
 const syne = Syne({ subsets: ["latin"], weight: ['400', '500', '600', '700', '800'] });
@@ -53,6 +55,26 @@ const Costumer = () => {
                             </div>
                         ))
                     }
+                </div>
+                <div className="flex items-center justify-center mt-12 1xl:mt-6">
+                    <div className="relative">
+                        <div
+                            className="absolute -inset-1 rounded-lg bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-indigo-600 0 via-red-600 0 to-amber-600 />0 opacity-50 blur-2xl"
+                        ></div>
+                        <div className="relative">
+                            <Link href="/" className={`${anton.className} button max-w-[420px] w-full 1xl:rounded-xl flex items-center justify-center`}>
+                                <div className="button_text 2xl:text-sm dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl">JOIN THE OUR WORLD <BiMoneyWithdraw size={21} className="mb-0.5 1xl:mb-[1px]" /></div>
+                                <div className="circle"></div>
+                            </Link>
+                            <div className="flex items-center gap-2 mt-3 1xl:mt-2 justify-center">
+                                <TbUsersGroup size={21} />
+                                <span className="dark:text-white/60 1xl:text-sm font-medium tracking-tight flex items-center gap-1">
+                                    <span className="dark:text-white text-black/60 font-bold">10000+ </span>
+                                    Students in the our world
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

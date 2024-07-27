@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image"
 import Link from "next/link"
-import { FaTelegramPlane } from "react-icons/fa";
+import { LuBookMarked } from "react-icons/lu";
 import { IoSunny, IoMoon } from "react-icons/io5";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
@@ -30,8 +30,8 @@ const Header = () => {
                         }
                     </Link>
                     <div className="flex items-center gap-4">
-                        <Link target="_blank" href={'https://t.me/+ZKe3UzExx1o4Mjcy'} className="dark:text-white flex items-center gap-2 px-3 py-1 dark:bg-white/15 bg-black/10 font-bold tracking-tighter rounded-full">
-                            Join Community <FaTelegramPlane className="mt-[1px]" />
+                        <Link target="_blank" href={'/'} className="uppercase dark:text-white text-sm flex items-center gap-1.5 px-3 py-1.5 dark:bg-white/10 bg-black/5 font-bold tracking-tighter rounded-full">
+                            courses <LuBookMarked className="font-extrabold" />
                         </Link>
 
                         <button
