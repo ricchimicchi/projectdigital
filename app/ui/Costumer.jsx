@@ -37,7 +37,7 @@ const Costumer = () => {
                     <span className="font-semibold tracking-tighter">Click More Information</span>
                 </div>
 
-                <div className="flex items-center justify-center 1xl:grid 1xl:grid-cols-2 flex-wrap max-w-[900px] mx-auto gap-[4px] mt-6 px-2">
+                <div className="flex items-center justify-center 1xl:grid 1xl:grid-cols-2 flex-wrap max-w-[900px] mx-auto gap-[10px] 1xl:gap-[4px] mt-6 px-2">
                     {
                         costumer_data.map((e) => (
                             <div onClick={() => popupcostumerfunc(e.id)} key={e.id} className="relative cursor-pointer max-w-[280px] dark:bg-[#040d11] bg-[#ececec99] group rounded-md hover: border-[1px] border-white/5 overflow-hidden trs_lg">
@@ -65,9 +65,30 @@ const Costumer = () => {
                             exit={{ opacity: 0, y: "0%" }}
                             transition={{ duration: 0.3 }}
                             onClick={() => setPopupCostumer(false)}
-                            className="fixed inset-0 bg-black/50 flex items-center justify-center backdrop-blur-sm z-[999999999]">
-                            <div className="p-12 backdrop-blur-xl rounded-lg" onClick={(e) => e.stopPropagation()}>
-                                {filteredCostumerData.costumer_name}
+                            className="fixed inset-0 dark:bg-black/50 bg-black/10 flex items-center justify-center backdrop-blur-sm z-[999999999]">
+                            <div className="p-6 1xl:p-4 backdrop-blur-sm bg-black/30 rounded-lg relative" onClick={(e) => e.stopPropagation()}>
+                                <button onClick={() => setPopupCostumer(false)} className="text-3xl absolute top-2 right-3 text-white">
+                                    <IoClose />
+                                </button>
+                                <div className="grid grid-cols-2 2xl:flex 2xl:flex-col-reverse 2xl:items-center 2xl:justify-center gap-9 1xl:gap-4">
+                                    <div className="w-[320px] h-[320px] 1xl:w-[300px] 1xl:h-[200px] relative z-[99]">
+                                        <Image src={filteredCostumerData.main_result_img} className="pointer-events-none object-cover w-full h-full" width={290} height={290} alt='costumer_images' />
+                                    </div>
+                                    <div>
+                                        <div className="flex items-center gap-4">
+                                            <h2 className={`${syne.className} text-4xl 1xl:text-xl font-bold tracking-tighter text-white`}>{filteredCostumerData.costumer_name} ~ {filteredCostumerData.costumer_age}</h2>
+                                            <Image src={filteredCostumerData.costumer_flag} className="pointer-events-none rounded-sm mt-[2px]" width={25} height={20} alt='costumer_images' />
+                                        </div>
+                                        <div className="mt-1">
+                                            <span className="font-semibold text-sm px-[3px] text-white">{filteredCostumerData.costumer_main_join_time} <span className="italic text-white/40 text-xs font-semibold">(Join program date)</span></span>
+                                            <span className="flex items-start mt-2 gap-1">
+                                                <span className={`text-4xl ${anton.className} bg-gradient-to-br from-amber-500 to-yellow-400 bg-clip-text text-transparent`}>{filteredCostumerData.monthly_income}</span>
+                                                <span className="text-amber-500 font-semibold tracking-tight">+/month</span>
+                                            </span>
+                                            <p className="max-w-[300px] font-medium text-sm tracking-tight mt-3 text-white">{filteredCostumerData.costumer_main_comment}</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </motion.div>
                     )
