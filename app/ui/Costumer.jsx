@@ -65,8 +65,8 @@ const Costumer = () => {
                             exit={{ opacity: 0, y: "0%" }}
                             transition={{ duration: 0.3 }}
                             onClick={() => setPopupCostumer(false)}
-                            className="fixed inset-0 dark:bg-black/50 bg-black/10 flex items-center justify-center backdrop-blur-sm z-[999999999]">
-                            <div className="p-6 1xl:p-4 backdrop-blur-sm bg-black/30 rounded-lg relative" onClick={(e) => e.stopPropagation()}>
+                            className="fixed inset-0 dark:bg-black/50 bg-black/5 flex items-center justify-center backdrop-blur-sm z-[999999999]">
+                            <div className="p-6 1xl:p-4 backdrop-blur-xl bg-black/80 rounded-lg relative" onClick={(e) => e.stopPropagation()}>
                                 <button onClick={() => setPopupCostumer(false)} className="text-3xl absolute top-2 right-3 text-white">
                                     <IoClose />
                                 </button>
