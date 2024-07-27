@@ -5,6 +5,7 @@ import { BiMoneyWithdraw } from "react-icons/bi";
 import { TbUsersGroup } from "react-icons/tb";
 import WhatIsThis from "./ui/WhatIsThis";
 import StepByStep from "./ui/StepByStep";
+import Costumer from "./ui/Costumer";
 
 
 
@@ -33,12 +34,12 @@ export default function Home() {
           priority={true}
         />
         <div className="pt-32 px-2">
-          <span className={` dark:text-white/50 text-sm font-bold block text-center mb-3`}>
+          <span className={` dark:text-white/50 text-sm font-bold block text-center`}>
             OPEN YOUR EYES NOW
           </span>
-          <h1 className={`${anton.className} text-center !leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
-          <h1 className={`${anton.className} text-center !leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>
-          <p className={`dark:text-white/50 font-medium text-center mt-2 mb-3 rounded-2xl leading-[18px] 1xl:text-sm`}>We have already passed the halfway point of 2024, and you! <br className="2xl:hidden" /> You must change your life now.</p>
+          <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
+          <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>
+          <p className={`dark:text-white/50 font-medium text-center mt-3 mb-3 rounded-2xl leading-[18px] 1xl:text-sm`}>We have already passed the halfway point of 2024, and you! <br className="2xl:hidden" /> You must change your life now.</p>
           <div className="mt-7 flex items-center justify-center">
             <video src="/hero-main-images/hero_main_mm.mp4" className="relative pointer-events-none z-[9999] max-w-[1100px] min-h-[340px] object-cover w-full rounded-2xl border-[2px] 1xl:border-[1px] border-white/40" autoPlay loop muted playsInline></video>
           </div>
@@ -65,6 +66,7 @@ export default function Home() {
         </div>
         <WhatIsThis />
         <StepByStep />
+        <Costumer />
       </section>
     </div>
   );
