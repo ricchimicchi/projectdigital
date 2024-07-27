@@ -10,7 +10,7 @@ const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 const Costumer = () => {
     return (
         <>
-            <div className="mt-20">
+            <div className="mt-20 1xl:mt-2">
                 <div>
                     <span className={` dark:text-white/50 text-sm font-bold block text-center`}>
                         {`SOME OF THE WINNERS`}
@@ -29,8 +29,8 @@ const Costumer = () => {
                             <div key={e.id} className="relative cursor-pointer max-w-[280px] dark:bg-[#040d11] bg-[#ececec99] group rounded-md hover: border-[1px] border-white/5 overflow-hidden trs_lg">
                                 <Image src='/grid-back.svg' className="pointer-events-none object-cover absolute inset-0 opacity-0 group-hover:opacity-100 trs_lg w-[290px]" width={290} height={290} alt='costumer_images' />
                                 <Image src='/hero-step/ellipse_1.svg' className="pointer-events-none object-cover absolute z-[100] -top-32 -left-32 opacity-0 group-hover:opacity-30 trs_lg w-[290px]" width={290} height={290} alt='costumer_images' />
-                                <div className="py-4 px-2 flex items-center 1xl:flex-col 1xl:items-start gap-2">
-                                    <h2 className={`${syne.className} text-2xl font-bold`}>{e.costumer_name} ~ {e.costumer_age}</h2>
+                                <div className="py-4 px-2 flex items-center 1xl:flex-col 1xl:items-start gap-2 1xl:gap-1">
+                                    <h2 className={`${syne.className} text-2xl 1xl:text-xl font-bold`}>{e.costumer_name} ~ {e.costumer_age}</h2>
                                     <Image src={e.costumer_flag} className="pointer-events-none rounded-sm" width={25} height={20} alt='costumer_images' />
                                 </div>
                                 <div className="w-[280px] h-[180px] relative z-[99]">
