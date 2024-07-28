@@ -82,13 +82,13 @@ const Choose = () => {
             <div className="hidden 4xl:flex px-2.5 relative h-full w-full mt-32 pb-32">
                 <Image
                     src='/wkp/arw_res.svg'
-                    className="pointer-events-none dark:opacity-40 opacity-100 4xl:block hidden -ml-7"
+                    className="pointer-events-none dark:opacity-40 opacity-100 4xl:block hidden -ml-6"
                     width={40}
                     height={300}
                     alt="back"
                     priority={true}
                 />
-                <div className="-ml-2">
+                <div>
                     <div>
                         <span className={` dark:text-white/50 text-sm font-medium block uppercase tracking-wider text-start`}>
                             {`fail to achieve`}
