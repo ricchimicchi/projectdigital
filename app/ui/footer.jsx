@@ -8,9 +8,7 @@ import Link from "next/link"
 
 const Footer = () => {
 
-
     const { theme, setTheme } = useTheme();
-
 
     return (
         <footer className="mt-32 1xl:mt-8">

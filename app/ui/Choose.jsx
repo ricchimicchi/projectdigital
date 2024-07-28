@@ -2,10 +2,6 @@ import { Audiowide, Syne } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { BiMoneyWithdraw } from "react-icons/bi";
-import { TbUsersGroup } from "react-icons/tb";
-
-
-
 
 const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 const syne = Syne({ subsets: ["latin"], weight: ['400', '500', '600', '700', '800'] });
