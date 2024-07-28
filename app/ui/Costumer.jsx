@@ -26,7 +26,7 @@ const Costumer = () => {
 
     return (
         <>
-            <div className="mt-20 1xl:mt-2 pb-32">
+            <div className="mt-20 1xl:-mt-20 pb-32">
                 <div>
                     <span className={` dark:text-white/50 text-sm font-bold block text-center`}>
                         {`SOME OF THE WINNERS`}
