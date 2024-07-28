@@ -26,7 +26,7 @@ const Costumer = () => {
 
     return (
         <>
-            <div className="mt-20 1xl:mt-2 pb-44">
+            <div className="mt-20 1xl:mt-2 pb-32">
                 <div>
                     <span className={` dark:text-white/50 text-sm font-bold block text-center`}>
                         {`SOME OF THE WINNERS`}
@@ -108,6 +108,7 @@ const Costumer = () => {
                                                 <span className="text-amber-500 font-semibold tracking-tight">+/month</span>
                                             </span>
                                             <p className="max-w-[300px] font-medium text-sm tracking-tight mt-3 text-white">{filteredCostumerData.costumer_main_comment}</p>
+                                            <span className="text-white/40 text-xs font-semibold">{filteredCostumerData.costumer_main_comment_time}</span>
                                         </div>
                                     </div>
                                 </div>

@@ -13,7 +13,7 @@ const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 
 const StepByStep = () => {
     return (
-        <div className="relative mt-20 1xl:mt-0 overflow-hidden pb-32">
+        <div className="relative mt-20 1xl:mt-0 overflow-hidden pb-44">
             <div className="mask-l dark:mask-t pointer-events-none h-[90px] relative z-50 w-full select-none backdrop-blur-[1px] transition-all"></div>
             <Image
                 src='/back-hero.svg'
@@ -50,7 +50,7 @@ const StepByStep = () => {
 
             <Image
                 src='/hero-step/ellipse_1.svg'
-                className="absolute pointer-events-none left-[7rem] -bottom-10 1xl:bottom-3 1xl:pt-12 2xl:-mt-8 dark:opacity-20 opacity-60 -rotate-45"
+                className="absolute pointer-events-none left-[7rem] bottom-1 1xl:bottom-3 1xl:pt-12 2xl:-mt-8 dark:opacity-20 opacity-60 -rotate-45"
                 width={500}
                 height={500}
                 alt="back"
