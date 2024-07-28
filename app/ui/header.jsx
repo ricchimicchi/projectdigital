@@ -30,7 +30,7 @@ const Header = () => {
                         }
                     </Link>
                     <div className="flex items-center gap-4">
-                        <Link target="_blank" href={'/'} className="uppercase dark:text-white text-sm flex items-center gap-1.5 px-3 py-1.5 dark:bg-white/10 bg-black/5 font-bold tracking-tighter rounded-full">
+                        <Link href={'/courses'} className="uppercase dark:text-white text-sm flex items-center gap-1.5 px-3 py-1.5 dark:bg-white/10 bg-black/5 font-bold tracking-tighter rounded-full">
                             courses <LuBookMarked className="font-extrabold" />
                         </Link>
 
