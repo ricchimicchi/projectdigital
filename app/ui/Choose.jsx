@@ -79,10 +79,10 @@ const Choose = () => {
                     </div>
                 </div>
             </div>
-            <div className="hidden 4xl:block px-2.5 relative h-full w-full mt-20">
+            <div className="hidden 4xl:block px-2.5 relative h-full w-full mt-32">
                 <Image
                     src='/wkp/arw_res.svg'
-                    className="pointer-events-none dark:opacity-40 opacity-100 4xl:block hidden -ml-4"
+                    className="pointer-events-none dark:opacity-40 opacity-100 4xl:block hidden -ml-7"
                     width={40}
                     height={300}
                     alt="back"
