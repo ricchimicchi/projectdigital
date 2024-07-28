@@ -2,6 +2,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "./ui/header";
 import { ThemeProvider } from "./providers/ThemeProvider";
+import Footer from "./ui/footer";
 
 const inter = Manrope({ subsets: ["latin"], weight: ['200', '300', '400', '500', '600', '700', '800'] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
           <main>
             {children}
           </main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

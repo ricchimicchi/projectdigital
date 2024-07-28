@@ -55,7 +55,7 @@ const Faq = () => {
                                     transition={{ duration: 0.3 }}
                                     style={{ overflow: 'hidden' }}
                                 >
-                                    <div className="pb-6 pt-2 px-4 text-[#A6B0BA] font-medium">{item.content}</div>
+                                    <div className="pb-6 pt-2 px-4 text-[#A6B0BA] font-medium 1xl:text-sm">{item.content}</div>
                                 </motion.div>
                             )}
                         </AnimatePresence>
