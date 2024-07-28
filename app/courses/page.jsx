@@ -35,19 +35,19 @@ const Courses = () => {
                     <h1 className={`${anton.className} mt-2 text-center !leading-[52px] 1xl:!leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>{`THE CHOICE IS YOURS`}</h1>
                     <h1 className={`${anton.className} mt-2 text-center !leading-[52px] 1xl:!leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>{`THE CHOICE IS YOURS`}</h1>
                 </div>
-                <div className="mt-10 grid grid-cols-2 justify-center max-w-[560px] mx-auto gap-4 1xl:gap-1">
+                <div className="mt-10 grid grid-cols-2 justify-center max-w-[560px] mx-auto gap-4 1xl:grid-cols-1">
                     {
                         csrdd.map((e) => (
-                            <div key={e.id} className="backdrop-blur-xl p-3 1xl:p-1 dark:bg-white/5 dark:hover:bg-white/10 hover:scale-105 bg-black/10 trs_lg rounded-xl">
+                            <div key={e.id} className="backdrop-blur-xl p-3 dark:bg-white/5 dark:hover:bg-white/10 hover:scale-105 bg-black/10 trs_lg rounded-xl">
                                 <Image
                                     src={e.main_image}
-                                    className="pointer-events-none border-[1px] border-[#ffffff39] rounded-lg"
+                                    className="pointer-events-none border-[1px] border-[#ffffff39] rounded-lg w-full"
                                     width={260}
                                     height={260}
                                     alt="back"
                                     priority={true}
                                 />
-                                <div className="mt-2 1xl:px-1">
+                                <div className="mt-2">
                                     <span className="text-[8px] font-semibold dark:text-white/60 tracking-wider">{e.title_hd}</span>
                                     <h3 className={`${syne.className} max-w-[250px] font-bold tracking-tight leading-[18px] h-16`}>{e.title}</h3>
                                 </div>
