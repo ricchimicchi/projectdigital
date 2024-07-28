@@ -67,7 +67,8 @@ export default function Home() {
         </div>
         <WhatIsThis />
         <StepByStep />
-        <div className="relative py-20 main_bg dark:bg-opacity-100 bg-opacity-10">
+        <div className="relative py-20">
+          <div className="main_bg dark:block hidden"></div>
         <div className="mask-l dark:mask-t pointer-events-none h-[84px] 1xl:h-[40px] -mt-5 absolute z-50 w-full select-none backdrop-blur-[1px] transition-all 2xl:hidden"></div>
           <Costumer />
           <Choose />
