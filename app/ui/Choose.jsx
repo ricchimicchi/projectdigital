@@ -79,15 +79,41 @@ const Choose = () => {
                     </div>
                 </div>
             </div>
-            <div className="hidden 4xl:block px-2.5 relative h-full w-full mt-32">
+            <div className="hidden 4xl:flex px-2.5 relative h-full w-full mt-32">
                 <Image
                     src='/wkp/arw_res.svg'
-                    className="pointer-events-none dark:opacity-40 opacity-100 4xl:block hidden -ml-5"
+                    className="pointer-events-none dark:opacity-40 opacity-100 4xl:block hidden -ml-7"
                     width={40}
                     height={300}
                     alt="back"
                     priority={true}
                 />
+                <div className="-ml-2">
+                    <div>
+                        <span className={` dark:text-white/50 text-sm font-medium block uppercase tracking-wider text-start`}>
+                            {`fail to achieve`}
+                        </span>
+                        <h1 className={`${syne.className} uppercase mt-2 text-start !leading-[31px] headline text-3xl 1xl:text-2xl font-bold text-white dark:block hidden`}>{`Stay stagnant`}</h1>
+                        <h1 className={`${syne.className} uppercase mt-2 text-start !leading-[31px] text-3xl 1xl:text-2xl font-bold text-black dark:hidden`}>{`Stay stagnant`}</h1>
+                        <p className="max-w-[300px] text-start text-sm font-medium dark:text-white/60 leading-5 mt-2">Follow the traditional path, working for years in a job you don’t enjoy, for a boss you don’t like, earning a mediocre salary, just so you can retire in 50 years.</p>
+                        <div className="px-5 py-3 rounded-sm bg-[#09131c] text-white text-sm font-medium text-center cursor-pointer mt-3.5 max-w-[200px] flex items-start justify-center">
+                            Remain an Employee
+                        </div>
+                    </div>
+                    <div className="mt-8">
+                        <span className="bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent font-medium text-sm text-start block">PAY</span>
+                        <div className="flex items-start gap-1 justify-start">
+                            <span className="font-bold text-sm block mt-3 bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent">$</span>
+                            <h1 className={`${anton.className} uppercase mt-2 text-start !leading-[31px] text-3xl 1xl:text-2xl font-bold bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent`}>{`24.99`}</h1>
+                        </div>
+                        <p className="max-w-[300px] text-start text-sm font-medium dark:text-white/60 leading-5 mt-2">Immediately tap into a reservoir of cutting-edge knowledge, positioning yourself at the vanguard of innovation and fast-tracking your path to wealth.</p>
+                        <div className="relative w-full mt-3">
+                            <Link href="/" className={`${anton.className} dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl rounded-sm border-[3px] border-[#ffca25] px-3 py-2 w-full flex items-center justify-center jn_btn`}>
+                                <div className="flex items-center gap-2">JOIN THE OUR WORLD <BiMoneyWithdraw size={21} className="mb-0.5 1xl:mb-[1px]" /></div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
