@@ -65,9 +65,9 @@ const StepByStep = () => {
                         A STEP-BY-STEP PATH
                     </span>
 
-                    <h1 className={`${anton.className} text-center !leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>IT DOESN’T TAKE 10 YEARS
+                    <h1 className={`${anton.className} text-center !leading-[51px] 1xl:!leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>IT DOESN’T TAKE 10 YEARS
                     </h1>
-                    <h1 className={`${anton.className} text-center !leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>IT DOESN’T TAKE 10 YEARS
+                    <h1 className={`${anton.className} text-center !leading-[51px] 1xl:!leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>IT DOESN’T TAKE 10 YEARS
                     </h1>
                 </div>
             </div>

@@ -7,6 +7,7 @@ import WhatIsThis from "./ui/WhatIsThis";
 import StepByStep from "./ui/StepByStep";
 import Costumer from "./ui/Costumer";
 import Choose from "./ui/Choose";
+import Faq from "./ui/Faq";
 
 
 
@@ -38,8 +39,8 @@ export default function Home() {
           <span className={` dark:text-white/50 text-sm font-bold block text-center`}>
             OPEN YOUR EYES NOW
           </span>
-          <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
-          <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>
+          <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[51px] 1xl:!leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>2024 IS YOUR LAST CHANCE</h1>
+          <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[51px] 1xl:!leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>2024 IS YOUR LAST CHANCE</h1>
           <p className={`dark:text-white/50 font-medium text-center mt-3 mb-3 rounded-2xl leading-[18px] 1xl:text-sm`}>We have already passed the halfway point of 2024, and you! <br className="2xl:hidden" /> You must change your life now.</p>
           <div className="mt-7 flex items-center justify-center">
             <video src="/hero-main-images/hero_main_mm.mp4" className="relative pointer-events-none z-[9999] max-w-[1100px] min-h-[340px] object-cover w-full border-white/40 rounded-xl border-[1px]" autoPlay loop muted playsInline></video>
@@ -69,10 +70,12 @@ export default function Home() {
         <StepByStep />
         <div className="relative py-20">
           <div className="main_bg dark:block hidden"></div>
-        <div className="mask-l dark:mask-t pointer-events-none h-[84px] 1xl:h-[40px] -mt-5 absolute z-50 w-full select-none backdrop-blur-[1px] transition-all 2xl:hidden"></div>
+          <div className="mask-l dark:mask-t pointer-events-none h-[124px] 1xl:h-[40px] -mt-5 absolute z-50 w-full select-none backdrop-blur-[1px] transition-all 2xl:hidden"></div>
           <Costumer />
           <Choose />
+          <div className="mask-l dark:mask-t pointer-events-none h-[124px] 1xl:h-[40px] -mt-5 absolute -bottom-32 z-50 w-full select-none backdrop-blur-[1px] transition-all 2xl:hidden"></div>
         </div>
+        <Faq />
       </section>
     </div>
   );

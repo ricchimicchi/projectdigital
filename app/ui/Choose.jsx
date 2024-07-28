@@ -12,13 +12,13 @@ const syne = Syne({ subsets: ["latin"], weight: ['400', '500', '600', '700', '80
 
 const Choose = () => {
     return (
-        <div className="1xl:-mt-14 mb-44 px-2 overflow-hidden relative">
+        <div className="1xl:-mt-14 px-2 overflow-hidden relative">
             <div>
                 <span className={` dark:text-white/50 text-sm font-bold block text-center`}>
                     {`YOU MUST CHOOSE`}
                 </span>
-                <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>{`TWO PATHS LIE BEFORE YOU`}</h1>
-                <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>{`TWO PATHS LIE BEFORE YOU`}</h1>
+                <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[52px] 1xl:!leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>{`TWO PATHS LIE BEFORE YOU`}</h1>
+                <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[52px] 1xl:!leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>{`TWO PATHS LIE BEFORE YOU`}</h1>
                 <div className="mt-7 flex items-center justify-center relative z-50">
                     <video src="/wkp/matrix_main_hero.mp4" className="relative pointer-events-none z-[99999] max-w-[871px] min-h-[340px] object-cover w-full rounded-2xl border-[1px] border-[#e6e3e3] dark:border-opacity-40" autoPlay loop muted playsInline></video>
                 </div>
@@ -41,7 +41,7 @@ const Choose = () => {
                     priority={true}
                 />
             </div>
-            <div className="flex items-center justify-between w-full max-w-[870px] mx-auto -mt-7 4xl:hidden pb-32">
+            <div className="flex items-center justify-between w-full max-w-[870px] mx-auto -mt-7 4xl:hidden">
                 <div>
                     <span className={` dark:text-white/50 text-sm font-medium block uppercase tracking-wider text-center`}>
                         {`fail to achieve`}
@@ -79,7 +79,7 @@ const Choose = () => {
                     </div>
                 </div>
             </div>
-            <div className="hidden 4xl:flex px-2.5 relative h-full w-full mt-40 pb-32">
+            <div className="hidden 4xl:flex px-2.5 relative h-full w-full mt-40">
                 <Image
                     src='/wkp/arw_res.svg'
                     className="pointer-events-none dark:opacity-40 opacity-100 4xl:block hidden -ml-6"

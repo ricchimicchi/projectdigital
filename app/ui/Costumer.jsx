@@ -31,8 +31,8 @@ const Costumer = () => {
                     <span className={` dark:text-white/50 text-sm font-bold block text-center`}>
                         {`SOME OF THE WINNERS`}
                     </span>
-                    <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>{`DANIEL'S WINNING COSTUMERS`}</h1>
-                    <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>{`DANIEL'S WINNING COSTUMERS`}</h1>
+                    <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[51px] 1xl:!leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>{`DANIEL'S WINNING COSTUMERS`}</h1>
+                    <h1 className={`${anton.className} mt-3 1xl:mt-1.5 text-center !leading-[51px] 1xl:!leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>{`DANIEL'S WINNING COSTUMERS`}</h1>
                 </div>
                 <div className="flex items-center justify-center gap-1 mt-6 dark:text-white/50">
                     <TbClick />
