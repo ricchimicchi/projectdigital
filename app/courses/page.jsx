@@ -38,7 +38,7 @@ const Courses = () => {
                 <div className="mt-10 grid grid-cols-2 justify-center max-w-[560px] mx-auto gap-4 1xl:grid-cols-1">
                     {
                         csrdd.map((e) => (
-                            <div key={e.id} className="backdrop-blur-xl p-3 dark:bg-white/5 dark:hover:bg-white/10 hover:scale-105 bg-black/10 trs_lg rounded-xl">
+                            <div key={e.id} className="backdrop-blur-xl p-3 dark:bg-white/5 dark:hover:bg-white/10 hover:scale-105 1xl:scale-100 bg-black/10 trs_lg rounded-xl">
                                 <Image
                                     src={e.main_image}
                                     className="pointer-events-none border-[1px] border-[#ffffff39] rounded-lg w-full"
