@@ -113,43 +113,31 @@ export const costumer_data = [
 
 export const accordionItems = [
     {
-        title: 'Why do you sell software and not make money yourself?',
-        content: `Go to downloads (Click 'Show all') and click 'Allow dangerous file' don't worry, it's a false positive, means it's falsely detected by the firewall.`,
+        title: 'Why do you sell Automation and not make money yourself?',
+        content: `We have consolidated all the experience we have gained so far in this field to create a comprehensive course, allowing you to benefit from these valuable knowledge and skills. For just a small fee, you can acquire the competencies that will secure your future and start writing your own success story.`,
     },
     {
-        title: 'What guarantees?',
-        content: `If you get this error, please make sure your antivirus has been disabled, and that you open 'DeltaInstaller.exe' instead of 'Delta.exe'.`,
-    },
-    {
-        title: 'Money out of thin air?',
-        content: `If Roblox crashes while Injection or shows an 'Unsupported Version' alert, The Roblox Exploit is currently patched, this means you may have to wait a few minutes/hours until it's working again.`,
-    },
-    {
-        title: 'Is it legal?',
-        content: `Yes. However this is a very rare thing to happen, you'll more likely only get banned from a specific game instead of your whole account being banned. Yet, we still recommend using an alternate account instead of your main.`,
-    },
-    {
-        title: 'Give me the application, I`ll pay you a percent of the profits.',
-        content: `Actually no. There are currently no Roblox exploits that support 100% of the scripts. Still, Delta is supporting around 99% of all scripts due to its custom module and UNC Support.`,
-    },
-    {
-        title: 'Can the application stop working?',
-        content: `No matter if you're looking for universal, or a specific game script, there are a few options that we would personally recommend, These are: ScriptBlox, RobloxScripts and Deltas own 'Scripthub' that's built in already.`,
+        title: 'Does the course come with a guarantee?',
+        content: `This journey depends on how much time and dedication you are willing to invest. If you work consistently and smartly, and apply the knowledge provided in our course, success will be inevitable. With each step, you will enhance your skills and knowledge, paving the way to write your own success story. Remember, the most crucial factor in your journey is you!`,
     },
     {
         title: 'Money out of thin air?',
-        content: `It depends on how you mean it. Roblox Exploits are obviously 100% legal but as stated before, Roblox could ban your account even though they didn't do this since late 2020.`,
+        content: `Absolutely not! YouTube is also an advertising platform. When you upload a video, YouTube places ads on your video, and a portion of the advertiser's payment goes to you. This means tons of ads and money. The more views your videos get, the more ads are shown, and therefore, the more revenue you earn. With this feature, YouTube provides a sustainable income model for content creators.`,
     },
     {
-        title: 'Is it legal?',
-        content: `Make sure you're using the browser version of Roblox (roblox.com) and not the Microsoft store one. If this still doesn't help, check this pastebin out for the instructions.`,
+        title: 'Is this program suitable for women?',
+        content: `Yes, our course has over 1000+ women, and all of them are earning income. This diversity demonstrates that our course is effective for participants from various skill levels and backgrounds.`,
     },
     {
-        title: 'Have any other questions?',
-        content: `If you have any other questions, feel free to join our Discord server and ask one of our friendly staff by creating a ticket.`,
+        title: 'Does my age really not matter?',
+        content: `No, 40% of our students are under 18, and they are still earning substantial amounts of money. Despite their young age, these students achieve impressive results using the knowledge and strategies provided in our course. This demonstrates that our course is effective regardless of age or experience, and even young individuals can achieve significant success.`,
     },
     {
-        title: 'Can the application stop working?',
-        content: `If you have any other questions, feel free to join our Discord server and ask one of our friendly staff by creating a ticket.`,
+        title: 'I live in X country. Is it a problem?',
+        content: `No, we teach a location-independent business model here, so where you are does not matter.`,
+    },
+    {
+        title: 'Will I get access to all the courses once I join?',
+        content: `Yes, when you join Daniel Automation, you gain access not just to one course, but to all of our courses.`,
     },
 ];
