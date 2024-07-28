@@ -26,7 +26,7 @@ const Costumer = () => {
 
     return (
         <>
-            <div className="mt-20 1xl:mt-2">
+            <div className="mt-20 1xl:mt-2 pb-44">
                 <div>
                     <span className={` dark:text-white/50 text-sm font-bold block text-center`}>
                         {`SOME OF THE WINNERS`}
@@ -44,7 +44,7 @@ const Costumer = () => {
                         costumer_data.map((e) => (
                             <div onClick={() => popupcostumerfunc(e.id)} key={e.id} className="relative cursor-pointer max-w-[280px] dark:bg-[#040d11] bg-[#ececec99] group rounded-md hover: border-[1px] border-white/5 overflow-hidden trs_lg">
                                 <Image src='/grid-back.svg' className="pointer-events-none object-cover absolute inset-0 opacity-0 1xl:opacity-100 group-hover:opacity-100 trs_lg w-[290px]" width={290} height={290} alt='costumer_images' />
-                                <Image src='/hero-step/ellipse_1.svg' className="pointer-events-none object-cover absolute z-[100] -top-32 1xl:-top-24 -left-32 opacity-0 1xl:-left-16 1xl:opacity-20 group-hover:opacity-30 trs_lg w-[290px]" width={290} height={290} alt='costumer_images' />
+                                <Image src='/hero-step/ellipse_1.svg' className="pointer-events-none object-cover absolute z-[100] -top-32 1xl:-top-24 -left-16 opacity-0 1xl:-left-16 1xl:opacity-20 group-hover:opacity-30 trs_lg w-[290px]" width={290} height={290} alt='costumer_images' />
                                 <div className="py-5 px-2 flex items-center gap-2">
                                     <h2 className={`${syne.className} text-2xl 1xl:text-xl font-bold`}>{e.costumer_name} ~ {e.costumer_age}</h2>
                                     <Image src={e.costumer_flag} className="pointer-events-none rounded-sm" width={25} height={20} alt='costumer_images' />
