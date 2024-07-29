@@ -5,6 +5,7 @@ import { MdOutlineDiscount } from 'react-icons/md';
 import { FaCheck } from "react-icons/fa6";
 import Link from 'next/link';
 import { IoIosArrowForward } from "react-icons/io";
+import { boxs_dtl } from '@/app/providers/costumer_data';
 
 
 
@@ -46,7 +47,7 @@ const CourseDetail = ({ params }) => {
                         <div>
                             <div className='mt-3 flex items-center gap-3'>
                                 <div class="circle_mm pulse green"></div>
-                                <span className='dark:text-white/60 font-medium tracking-tight'><span className='font-bold dark:text-white'>1451 </span> Succeeded students in the past 30 days</span>
+                                <span className='dark:text-white/60 font-medium tracking-tight'><span className='font-bold dark:text-white'>856 </span> Succeeded students in the past 30 days</span>
                             </div>
                             <div className="flex items-center gap-2 mt-4 1xl:mt-2">
                                 <span className={`${anton.className} text-xl font-semibold line-through dark:text-white/40`}>${dataFilter.oldPrice}</span>
@@ -102,12 +103,23 @@ const CourseDetail = ({ params }) => {
                             />
                         </div>
                         <div className='mt-7 1xl:mt-5'>
-                            <p className='dark:text-white/60 font-medium tracking-tight text-lg text-center 1xl:text-sm'>Discover the Power of YouTube Automation: <br className='2xl:hidden' /> Earn Without Showing Your Face or Making Videos!</p>
-                            <p className='dark:text-white/60 font-medium tracking-tight text-lg text-center 1xl:text-sm mt-4'>This unique business model is still under the radar but is gaining traction daily. So, when is the best time to start your own Automation channel? The time is NOW!</p>
+                            <p className='dark:text-white/70 font-medium tracking-tight text-lg text-center 1xl:text-sm'>Discover the Power of YouTube Automation: <br className='2xl:hidden' /> Earn Without Showing Your Face or Making Videos!</p>
+                            <p className='dark:text-white/70 font-medium tracking-tight text-lg text-center 1xl:text-sm mt-4'>This unique business model is still under the radar but is gaining traction daily. So, when is the best time to start your own Automation channel? The time is NOW!</p>
                         </div>
 
 
 
+                    </div>
+                    <div className='mt-16 grid grid-cols-3 3xl:grid-cols-2 2xl:grid-cols-1 gap-3 1xl:gap-1.5 justify-center'>
+                        {
+                            boxs_dtl.map((e) => (
+                                <div key={e.id} className='dark:bg-white/5 bg-black/5 flex flex-col gap-3 1xl:gap-2 items-center p-3 py-12 1xl:py-8 rounded-lg backdrop-blur-lg'>
+                                    <span className='block text-5xl 1xl:text-4xl'>{e.icon}</span>
+                                    <h3 className={`${anton.className} text-3xl 1xl:text-2xl font-semibold headline uppercase text-center`}>{e.title}</h3>
+                                    <p className='text-base font-medium text-center dark:text-white/70 1xl:text-sm 1xl:-mt-2'>{e.desc}</p>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
 

@@ -1,3 +1,9 @@
+import { MdPlayLesson } from "react-icons/md";
+import { FaCheckCircle } from "react-icons/fa";
+import { RiSecurePaymentFill } from "react-icons/ri";
+
+
+
 export const costumer_data = [
     {
         id: 1,
@@ -140,4 +146,25 @@ export const accordionItems = [
         title: 'Will I get access to all the courses once I join?',
         content: `Yes, when you join Daniel Automation, you gain access not just to one course, but to all of our courses.`,
     },
-];
+]
+
+export const boxs_dtl = [
+    {
+        id: 1,
+        icon: <MdPlayLesson />,
+        title: 'Easy Guide',
+        desc: `Don't leave your success to chance – leverage simple and scalable lessons to grow your business`
+    },
+    {
+        id: 2,
+        icon: <FaCheckCircle />,
+        title: 'One time Payment',
+        desc: 'Gain lifetime access to our courses with a one-time payment.'
+    },
+    {
+        id: 3,
+        icon: <RiSecurePaymentFill />,
+        title: 'easy checkout',
+        desc: 'We are delighted to offer our services with an easy and secure payment system.'
+    },
+]
