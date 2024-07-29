@@ -45,7 +45,7 @@ const Choose = () => {
                     <h1 className={`${syne.className} uppercase mt-2 text-center !leading-[31px] headline text-3xl 1xl:text-2xl font-bold text-white dark:block hidden`}>{`Stay stagnant`}</h1>
                     <h1 className={`${syne.className} uppercase mt-2 text-center !leading-[31px] text-3xl 1xl:text-2xl font-bold text-black dark:hidden`}>{`Stay stagnant`}</h1>
                     <p className="max-w-[300px] text-center text-sm font-medium dark:text-white/60 leading-5 mt-2">Follow the traditional path, working for years in a job you don’t enjoy, for a boss you don’t like, earning a mediocre salary, just so you can retire in 50 years.</p>
-                    <div className="px-5 py-3 rounded-sm bg-[#09131c] text-white text-sm font-medium text-center cursor-pointer mt-3.5 max-w-[200px] mx-auto">
+                    <div className="px-5 py-3 rounded-sm bg-[#09131c] text-white text-sm font-medium text-center cursor-pointer mt-4 max-w-[200px] mx-auto">
                         Remain an Employee
                     </div>
                 </div>
@@ -66,6 +66,7 @@ const Choose = () => {
                     <div className="flex items-start gap-1 justify-center">
                         <span className="font-bold text-sm block mt-3 bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent">$</span>
                         <h1 className={`${anton.className} uppercase mt-2 text-center !leading-[31px] text-3xl 1xl:text-2xl font-bold bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent`}>{`24.99`}</h1>
+                        <span className="text-center block mt-2.5 font-semibold text-xs dark:text-white/40">(Lifetime)</span>
                     </div>
                     <p className="max-w-[300px] text-center text-sm font-medium dark:text-white/60 leading-5 mt-2">Immediately tap into a reservoir of cutting-edge knowledge, positioning yourself at the vanguard of innovation and fast-tracking your path to wealth.</p>
                     <div className="relative w-full mt-3">
@@ -101,6 +102,7 @@ const Choose = () => {
                         <div className="flex items-start gap-1 justify-start">
                             <span className="font-bold text-sm block mt-3 bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent">$</span>
                             <h1 className={`${anton.className} uppercase mt-2 text-start !leading-[31px] text-3xl 1xl:text-2xl font-bold bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent`}>{`24.99`}</h1>
+                            <span className="text-center block mt-3.5 font-semibold text-xs dark:text-white/40">(Lifetime)</span>
                         </div>
                         <p className="max-w-[300px] text-start text-sm font-medium dark:text-white/60 leading-5 mt-2">Immediately tap into a reservoir of cutting-edge knowledge, positioning yourself at the vanguard of innovation and fast-tracking your path to wealth.</p>
                         <div className="relative w-full mt-3">

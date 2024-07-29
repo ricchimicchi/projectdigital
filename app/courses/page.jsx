@@ -3,6 +3,8 @@ import Image from "next/image";
 import { csrdd } from "../providers/cs_data";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
+import { MdOutlineDiscount } from "react-icons/md";
+
 
 
 
@@ -41,10 +43,10 @@ const Courses = () => {
                 <div className="mt-10 grid grid-cols-2 justify-center max-w-[560px] mx-auto gap-4 1xl:grid-cols-1">
                     {
                         csrdd.map((e) => (
-                            <div key={e.id} className="backdrop-blur-xl p-3 dark:bg-white/5 dark:hover:bg-white/10 bg-black/5 trs_lg rounded-xl">
+                            <div key={e.id} className="relative backdrop-blur-xl p-2.5 dark:bg-white/5 dark:hover:bg-white/10 bg-black/5 trs_lg rounded-xl overflow-hidden">
                                 <Image
                                     src={e.main_image}
-                                    className="pointer-events-none border-[1px] border-[#ffffff39] rounded-lg w-full"
+                                    className="pointer-events-none border-[1px] border-[#ffffff1c] rounded-lg w-full"
                                     width={260}
                                     height={260}
                                     alt="back"
@@ -56,6 +58,10 @@ const Courses = () => {
                                     <div className="flex items-center gap-2 -mt-4">
                                         <span className={`${anton.className} text-sm font-semibold line-through dark:text-white/40`}>${e.oldPrice}</span>
                                         <span className={`${anton.className} text-2xl font-semibold bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent`}>${e.newPrice}</span>
+                                        <div className="flex items-center gap-1 dark:bg-white/10 bg-black/10 px-1.5 py-1 rounded-md">
+                                            <MdOutlineDiscount size={12} />
+                                            <span className={`${anton.className} text-xs font-semibold tracking-tight`}>{e.discount_interest}%</span>
+                                        </div>
                                     </div>
                                     <div className="mt-3">
                                         <Link href={e.button_active_status ? `/courses/${e.id}` : `#`} className={e.button_active_status ? 'cursor-pointer dark:bg-[#41391a] bg-[#7d6b2c3c] rounded-md border-[3px] border-[#ffca25] px-3 py-2 w-full flex items-center justify-center' : 'cursor-not-allowed dark:bg-[#41391a] bg-[#7d6b2c3c] rounded-md border-[3px] border-[#ffca25] px-3 py-2 w-full flex items-center justify-center'}>
@@ -68,13 +74,18 @@ const Courses = () => {
                                                     alt="back"
                                                     priority={true}
                                                 />
-                                            </div>} </div>
+                                            </div>}</div>
                                         </Link>
                                     </div>
                                 </div>
                             </div>
                         ))
                     }
+                </div>
+                <div className="text-center mt-7">
+                    <p className="dark:text-white/60 text-sm font-medium tracking-tight">
+                        or continue your 9 - 5 <span className="font-bold">life</span>...
+                    </p>
                 </div>
             </div>
         </div>
