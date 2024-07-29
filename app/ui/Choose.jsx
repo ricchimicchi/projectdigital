@@ -69,7 +69,7 @@ const Choose = () => {
                     </div>
                     <p className="max-w-[300px] text-center text-sm font-medium dark:text-white/60 leading-5 mt-2">Immediately tap into a reservoir of cutting-edge knowledge, positioning yourself at the vanguard of innovation and fast-tracking your path to wealth.</p>
                     <div className="relative w-full mt-3">
-                        <Link href="/" className={`${anton.className} dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl rounded-sm border-[3px] border-[#ffca25] px-3 py-2 w-full flex items-center justify-center jn_btn`}>
+                        <Link href="/courses" className={`${anton.className} dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl rounded-sm border-[3px] border-[#ffca25] px-3 py-2 w-full flex items-center justify-center jn_btn`}>
                             <div className="flex items-center gap-2">JOIN THE OUR WORLD <BiMoneyWithdraw size={21} className="mb-0.5 1xl:mb-[1px]" /></div>
                         </Link>
                     </div>
