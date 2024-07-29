@@ -45,7 +45,7 @@ const CourseDetail = ({ params }) => {
                         <p className='mt-2 1xl:mt-1 font-semibold text-lg 1xl:text-base tracking-tight'>{dataFilter.main_description}</p>
                         <div>
                             <div className='mt-3 flex items-center gap-3'>
-                                <div class="circle pulse green"></div>
+                                <div class="circle_mm pulse green"></div>
                                 <span className='dark:text-white/60 font-medium tracking-tight'><span className='font-bold dark:text-white'>1451 </span> Succeeded students in the past 30 days</span>
                             </div>
                             <div className="flex items-center gap-2 mt-4 1xl:mt-2">
@@ -76,7 +76,7 @@ const CourseDetail = ({ params }) => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="mt-6">
+                            <div className="mt-9">
                                 <Link href="/courses/pay" className={`${anton.className} dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl rounded-sm border-[3px] border-[#ffca25] px-3 py-2 w-full flex items-center justify-center jn_btn`}>
                                     <div className="flex items-center gap-2 text-xl">CHECKOUT <IoIosArrowForward size={22} /></div>
                                 </Link>
@@ -86,10 +86,26 @@ const CourseDetail = ({ params }) => {
                     </div>
                 </div>
                 <div className='mt-32'>
+                    <div>
+                        <div className='max-w-[700px] mx-auto'>
+                            <h1 className={`${anton.className} mt-2 1xl:mt-1 uppercase text-center !leading-[51px] 1xl:!leading-[26px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>BUT WHAT IS THIS YOUTUBE AUTOMATION?</h1>
+                            <h1 className={`${anton.className} mt-2 1xl:mt-1 uppercase text-center !leading-[51px] 1xl:!leading-[26px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>BUT WHAT IS THIS YOUTUBE AUTOMATION?</h1>
+                        </div>
+                        <div className='mt-8'>
+                            <Image
+                                src='/detail/detail_yt.svg'
+                                className="pointer-events-none dark:opacity-35 rounded-lg border-[1px] border-[#ffffff1c]"
+                                width={1095}
+                                height={1000}
+                                alt="back"
+                                priority={true}
+                            />
+                        </div>
 
+
+
+                    </div>
                 </div>
-
-
 
             </div>
         </section>
