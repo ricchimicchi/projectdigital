@@ -7,7 +7,7 @@ export const csrdd = [
         oldPrice: '149.99',
         newPrice: '24.99',
         main_image: '/csr/youtube_tb.svg',
-        button_active_status: false,
+        button_active_status: true,
         button_text: 'GET NOW' 
     },
     {
@@ -17,8 +17,8 @@ export const csrdd = [
         main_description: 'The Secret way making $10.000K Faceless',
         oldPrice: '189.99',
         newPrice: '24.99',
-        main_image: '/csr/tiktok_tb.svg'
-        , button_active_status: false,
+        main_image: '/csr/tiktok_tb.svg',
+        button_active_status: false,
         button_text: 'COMING SOON' 
     },
 
