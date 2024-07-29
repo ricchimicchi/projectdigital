@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Audiowide, Syne } from "next/font/google";
 import { MdOutlineDiscount } from 'react-icons/md';
 import { FaCheck } from "react-icons/fa6";
+import Link from 'next/link';
+import { IoIosArrowForward } from "react-icons/io";
 
 
 
@@ -14,9 +16,24 @@ const CourseDetail = ({ params }) => {
     console.log(dataFilter)
 
     return (
-        <section className='mt-20 1xl:mt-0'>
+        <section className='mt-20 1xl:mt-0 max-w-[1600px] mx-auto relative overflow-hidden'>
+            <Image
+                src='/hero-step/ellipse_1.svg'
+                className="pointer-events-none dark:opacity-20 opacity-100 absolute -z-10 1xl:-top-20 1xl:-left-48"
+                width={500}
+                height={500}
+                alt="back"
+                priority={true}
+            />
+              <Image
+                src='/hero-step/ellipse_1.svg'
+                className="pointer-events-none dark:opacity-20 opacity-100 absolute right-56 1xl:right-3 bottom-2 -z-10"
+                width={500}
+                height={500}
+                alt="back"
+                priority={true}
+            />
             <div className='max-w-[1100px] mx-auto px-2'>
-
                 <div className='grid grid-cols-2 2xl:grid-cols-1 gap-2 3xl:gap-8 mt-32'>
                     <div>
                         <Image className='pointer-events-none rounded-lg border-[1px] border-[#ffffff1c]' src={dataFilter.main_image} width={460} height={460} alt={dataFilter.title} />
@@ -39,21 +56,26 @@ const CourseDetail = ({ params }) => {
                                 <ul className='flex items-start gap-3 flex-col 1xl:gap-2'>
                                     <li className='flex items-center gap-2'>
                                         <FaCheck />
-                                        <span className='text-base 1xl:text-sm font-semibold dark:text-white/60'>Escape the boring 9-to-5 routine</span>
+                                        <span className='text-base tracking-tight 1xl:text-sm font-semibold dark:text-white/60'>Escape the boring 9-to-5 routine</span>
                                     </li>
                                     <li className='flex items-center gap-2'>
                                         <FaCheck />
-                                        <span className='text-base 1xl:text-sm font-semibold dark:text-white/60'>Dedicate only 1-2 hours a day</span>
+                                        <span className='text-base tracking-tight 1xl:text-sm font-semibold dark:text-white/60'>Dedicate only 1-2 hours a day</span>
                                     </li>
                                     <li className='flex items-center gap-2'>
                                         <FaCheck />
-                                        <span className='text-base 1xl:text-sm font-semibold dark:text-white/60'>Be location independent</span>
+                                        <span className='text-base tracking-tight 1xl:text-sm font-semibold dark:text-white/60'>Be location independent</span>
                                     </li>
                                     <li className='flex items-center gap-2'>
                                         <FaCheck />
-                                        <span className='text-base 1xl:text-sm font-semibold dark:text-white/60'>No need for capital or expertise</span>
+                                        <span className='text-base tracking-tight 1xl:text-sm font-semibold dark:text-white/60'>No need for capital or expertise</span>
                                     </li>
                                 </ul>
+                            </div>
+                            <div className="mt-16">
+                                <Link href="/courses/pay" className={`${anton.className} dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl rounded-sm border-[3px] border-[#ffca25] px-3 py-2 w-full flex items-center justify-center jn_btn`}>
+                                    <div className="flex items-center gap-2 text-xl">CHECKOUT <IoIosArrowForward size={22} /></div>
+                                </Link>
                             </div>
                         </div>
 
