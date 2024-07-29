@@ -17,7 +17,7 @@ const CourseDetail = ({ params }) => {
     console.log(dataFilter)
 
     return (
-        <section className='mt-20 1xl:mt-0 max-w-[1600px] mx-auto relative overflow-hidden'>
+        <section className='mt-10 1xl:mt-0 max-w-[1600px] mx-auto relative overflow-hidden'>
             <Image
                 src='/hero-step/ellipse_1.svg'
                 className="pointer-events-none dark:opacity-20 opacity-100 absolute -z-10 1xl:-top-20 1xl:-left-48"
@@ -28,7 +28,7 @@ const CourseDetail = ({ params }) => {
             />
             <Image
                 src='/hero-step/ellipse_1.svg'
-                className="pointer-events-none dark:opacity-20 opacity-100 absolute right-56 1xl:right-12 top-[34rem] -z-10"
+                className="pointer-events-none dark:opacity-20 opacity-100 absolute right-56 1xl:right-12 top-[14rem] 1xl:top-[34rem] -z-10"
                 width={500}
                 height={500}
                 alt="back"
