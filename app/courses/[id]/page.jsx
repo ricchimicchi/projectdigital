@@ -14,7 +14,7 @@ const CourseDetail = ({ params }) => {
     console.log(dataFilter)
 
     return (
-        <section className='mt-20 1xl:mt-12'>
+        <section className='mt-20 1xl:mt-0'>
             <div className='max-w-[1100px] mx-auto px-2'>
 
                 <div className='grid grid-cols-2 2xl:grid-cols-1 gap-2 3xl:gap-8 mt-32'>
