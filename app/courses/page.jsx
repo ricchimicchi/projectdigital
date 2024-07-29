@@ -12,7 +12,7 @@ const syne = Syne({ subsets: ["latin"], weight: ['400', '500', '600', '700', '80
 
 const Courses = () => {
     return (
-        <div className="mt-24 h-screen relative">
+        <div className="mt-24 h-screen 2xl:h-full relative">
             <Image
                 src='/hero-step/ellipse_1.svg'
                 className="pointer-events-none dark:opacity-20 opacity-100 absolute -z-10"
