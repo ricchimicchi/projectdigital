@@ -25,9 +25,9 @@ const CourseDetail = ({ params }) => {
                 alt="back"
                 priority={true}
             />
-              <Image
+            <Image
                 src='/hero-step/ellipse_1.svg'
-                className="pointer-events-none dark:opacity-20 opacity-100 absolute right-56 1xl:right-3 bottom-2 -z-10"
+                className="pointer-events-none dark:opacity-20 opacity-100 absolute right-56 1xl:right-3 top-48 -z-10"
                 width={500}
                 height={500}
                 alt="back"
@@ -42,8 +42,12 @@ const CourseDetail = ({ params }) => {
                         <span className='tracking-wider dark:text-white/50 font-bold text-black/60 1xl:text-sm'>{dataFilter.title_hd}</span>
                         <h1 className={`${anton.className} mt-2 1xl:mt-1 uppercase !leading-[41px] 1xl:!leading-[26px] headline text-4xl 1xl:text-2xl font-bold text-white dark:block hidden`}>{dataFilter.title}</h1>
                         <h1 className={`${anton.className} mt-2 1xl:mt-1 uppercase !leading-[41px] 1xl:!leading-[26px] text-4xl 1xl:text-2xl font-bold text-black dark:hidden`}>{dataFilter.title}</h1>
-                        <p className='mt-2 1xl:mt-1 font-semibold text-lg 1xl:text-base'>{dataFilter.main_description}</p>
+                        <p className='mt-2 1xl:mt-1 font-semibold text-lg 1xl:text-base tracking-tight'>{dataFilter.main_description}</p>
                         <div>
+                            <div className='mt-3 flex items-center gap-3'>
+                                <div class="circle pulse green"></div>
+                                <span className='dark:text-white/60 font-medium tracking-tight'><span className='font-bold dark:text-white'>1451 </span> Succeeded students in the past 30 days</span>
+                            </div>
                             <div className="flex items-center gap-2 mt-4 1xl:mt-2">
                                 <span className={`${anton.className} text-xl font-semibold line-through dark:text-white/40`}>${dataFilter.oldPrice}</span>
                                 <span className={`${anton.className} text-4xl font-semibold bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent`}>${dataFilter.newPrice}</span>
@@ -52,7 +56,7 @@ const CourseDetail = ({ params }) => {
                                     <span className={`${anton.className} text-xs font-semibold tracking-tight`}>{dataFilter.discount_interest}% Sale</span>
                                 </div>
                             </div>
-                            <div className='mt-6'>
+                            <div className='mt-4'>
                                 <ul className='flex items-start gap-3 flex-col 1xl:gap-2'>
                                     <li className='flex items-center gap-2'>
                                         <FaCheck />
@@ -72,7 +76,7 @@ const CourseDetail = ({ params }) => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="mt-16">
+                            <div className="mt-6">
                                 <Link href="/courses/pay" className={`${anton.className} dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl rounded-sm border-[3px] border-[#ffca25] px-3 py-2 w-full flex items-center justify-center jn_btn`}>
                                     <div className="flex items-center gap-2 text-xl">CHECKOUT <IoIosArrowForward size={22} /></div>
                                 </Link>
@@ -80,6 +84,9 @@ const CourseDetail = ({ params }) => {
                         </div>
 
                     </div>
+                </div>
+                <div className='mt-32'>
+
                 </div>
 
 
