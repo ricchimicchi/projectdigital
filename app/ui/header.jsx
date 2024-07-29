@@ -35,7 +35,7 @@ const Header = () => {
                         </Link>
 
                         <button
-                            className="cursor-pointer !border-none !outline-none"
+                            className="cursor-pointer !border-none !outline-none 1xl:mr-1"
                             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                         >
                             {theme === "light" ? (

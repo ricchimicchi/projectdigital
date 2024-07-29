@@ -85,13 +85,13 @@ const CourseDetail = ({ params }) => {
 
                     </div>
                 </div>
-                <div className='mt-32'>
+                <div className='mt-32 1xl:mt-24'>
                     <div>
                         <div className='max-w-[700px] mx-auto'>
-                            <h1 className={`${anton.className} mt-2 1xl:mt-1 uppercase text-center !leading-[51px] 1xl:!leading-[26px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>BUT WHAT IS THIS YOUTUBE AUTOMATION?</h1>
-                            <h1 className={`${anton.className} mt-2 1xl:mt-1 uppercase text-center !leading-[51px] 1xl:!leading-[26px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>BUT WHAT IS THIS YOUTUBE AUTOMATION?</h1>
+                            <h1 className={`${anton.className} mt-2 1xl:mt-1 uppercase text-center !leading-[51px] 1xl:!leading-[26px] headline text-5xl 1xl:text-2xl font-bold text-white dark:block hidden`}>BUT WHAT IS THIS YOUTUBE AUTOMATION?</h1>
+                            <h1 className={`${anton.className} mt-2 1xl:mt-1 uppercase text-center !leading-[51px] 1xl:!leading-[26px] text-5xl 1xl:text-2xl font-bold text-black dark:hidden`}>BUT WHAT IS THIS YOUTUBE AUTOMATION?</h1>
                         </div>
-                        <div className='mt-8'>
+                        <div className='mt-8 1xl:mt-5'>
                             <Image
                                 src='/detail/detail_yt.svg'
                                 className="pointer-events-none dark:opacity-35 rounded-lg border-[1px] border-[#ffffff1c]"
@@ -100,6 +100,10 @@ const CourseDetail = ({ params }) => {
                                 alt="back"
                                 priority={true}
                             />
+                        </div>
+                        <div className='mt-7 1xl:mt-5'>
+                            <p className='dark:text-white/60 font-medium tracking-tight text-lg text-center 1xl:text-sm'>Discover the Power of YouTube Automation: <br className='2xl:hidden' /> Earn Without Showing Your Face or Making Videos!</p>
+                            <p className='dark:text-white/60 font-medium tracking-tight text-lg text-center 1xl:text-sm mt-4'>This unique business model is still under the radar but is gaining traction daily. So, when is the best time to start your own Automation channel? The time is NOW!</p>
                         </div>
 
 
