@@ -59,7 +59,16 @@ const Courses = () => {
                                     </div>
                                     <div className="mt-3">
                                         <Link href={e.button_active_status ? `/courses/${e.id}` : `/courses`} className={e.button_active_status ? 'cursor-pointer dark:bg-[#41391a] bg-[#7d6b2c3c] rounded-md border-[3px] border-[#ffca25] px-3 py-2 w-full flex items-center justify-center' : 'cursor-not-allowed dark:bg-[#41391a] bg-[#7d6b2c3c] rounded-md border-[3px] border-[#ffca25] px-3 py-2 w-full flex items-center justify-center'}>
-                                            <div className={`${anton.className} flex items-center gap-2`}>{e.button_text} <IoIosArrowForward size={21} className="mb-0.5 1xl:mb-[1px]" /></div>
+                                            <div className={`${anton.className} flex items-center gap-2`}>{e.button_text} {e.button_active_status ? <IoIosArrowForward size={21} className="mb-0.5 1xl:mb-[1px]" /> : <div>
+                                                <Image
+                                                    src='/loader.gif'
+                                                    className="pointer-events-none"
+                                                    width={16}
+                                                    height={16}
+                                                    alt="back"
+                                                    priority={true}
+                                                />
+                                            </div>} </div>
                                         </Link>
                                     </div>
                                 </div>
