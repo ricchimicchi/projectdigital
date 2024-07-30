@@ -57,8 +57,8 @@ const Pay = () => {
             <p className=" dark:text-white/60 text-black/70 1xl:text-sm font-medium 1xl:leading-[18px]">Join our team of ambitious individuals committed to unlocking the secrets of wealth and success.</p>
           </div>
           <div className="px-1 1xl:-mt-4">
-            <div className="py-7 px-4 1xl:py-5 1xl:px-2.5 backdrop-blur-xl dark:bg-white/5 bg-[#f2f2f267] rounded-2xl 1xl:rounded-xl">
-              <span className={`${anton.className} uppercase text-xl`}>Choose Course :</span>
+            <div className="py-7 px-4 1xl:py-5 1xl:px-2.5 backdrop-blur-xl dark:bg-white/5 bg-[#f2f2f267] rounded-2xl 1xl:rounded-xl shadow-2xl">
+              <span className={`${anton.className} uppercase text-xl`}>Choose Course</span>
               <div className="mt-3 flex flex-col gap-2">
                 {crschs.map((e) => (
                   <button
@@ -92,6 +92,9 @@ const Pay = () => {
                     </div>
                   </button>
                 ))}
+              </div>
+              <div className="mt-5">
+                <span className={`${anton.className} uppercase text-xl`}>Select Payment method</span>
               </div>
             </div>
           </div>
