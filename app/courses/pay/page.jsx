@@ -125,7 +125,7 @@ const Pay = () => {
               <p className=" dark:text-white/60 text-black/70 1xl:text-sm font-medium 1xl:leading-[18px]">Join our team of ambitious individuals committed to unlocking the secrets of wealth and success.</p>
             </div>
             <div className="px-1 1xl:-mt-4">
-              <div className="py-7 px-4 1xl:py-4 1xl:px-2.5 backdrop-blur-xl dark:bg-white/5 bg-[#f2f2f267] rounded-2xl 1xl:rounded-xl shadow-2xl">
+              <div className="py-7 px-4 1xl:py-4 1xl:px-1.5 backdrop-blur-xl dark:bg-white/5 bg-[#f2f2f267] rounded-2xl 1xl:rounded-xl shadow-2xl">
                 <span className={`${anton.className} uppercase text-xl 1xl:text-base`}>Choose Course</span>
                 <div className="mt-3 flex flex-col gap-2">
                   {crschs.map((e) => (
@@ -162,12 +162,12 @@ const Pay = () => {
                 <div className="mt-5">
                   <span className={`${anton.className} uppercase text-xl 1xl:text-base`}>Payment method</span>
                   <div>
-                    <div className="mt-3 grid grid-cols-3 gap-2 1xl:gap-1">
+                    <div className="mt-3 grid grid-cols-3 gap-2 1xl:gap-2">
                       {pytcrs.map((e) => (
                         <button
                           key={e.id}
                           onClick={() => handleSelectPayment(e.id)}
-                          className={`relative flex items-center gap-1 py-2 px-2 rounded-lg w-full trs_lg outline-none border-[1px] 
+                          className={`relative flex items-center gap-1 py-2 px-2 1xl:px-1.5 rounded-lg w-full trs_lg outline-none border-[1px] 
             ${selectedId === e.id ? 'dark:text-white dark:bg-white/5 bg-black/5 cursor-pointer dark:border-white/40' : 'cursor-pointer dark:border-white/30'}
             `}
                         >
@@ -187,7 +187,7 @@ const Pay = () => {
                     </div>
 
                     {selectedId === 1 && (
-                      <div className="relative mt-3">
+                      <div className="relative mt-2">
                         <div
                           className="flex items-center justify-between dark:border-white/40 border-[1px] dark:bg-[#15171b] dark:border-white/10' w-full py-3 px-3 rounded-md cursor-pointer select-none"
                           onClick={() => setIsOpen(!isOpen)}
