@@ -19,27 +19,27 @@ const Pay = () => {
             <ul className='flex items-start gap-2 flex-col 1xl:gap-1 mt-6 1xl:mt-3'>
               <li className='flex items-center gap-2'>
                 <FaCheck />
-                <span className='text-base tracking-tight 1xl:text-sm font-semibold dark:text-white/60 text-black/70'>Profit without any risk</span>
+                <span className='text-base tracking-tight 1xl:text-sm font-medium dark:text-white/60 text-black/70'>Profit without any risk</span>
               </li>
               <li className='flex items-center gap-2'>
                 <FaCheck />
-                <span className='text-base tracking-tight 1xl:text-sm font-semibold dark:text-white/60 text-black/70'>Escape the boring 9-to-5 routine</span>
+                <span className='text-base tracking-tight 1xl:text-sm font-medium dark:text-white/60 text-black/70'>Escape the boring 9-to-5 routine</span>
               </li>
               <li className='flex items-center gap-2'>
                 <FaCheck />
-                <span className='text-base tracking-tight 1xl:text-sm font-semibold dark:text-white/60 text-black/70'>Dedicate only 1-2 hours a day</span>
+                <span className='text-base tracking-tight 1xl:text-sm font-medium dark:text-white/60 text-black/70'>Dedicate only 1-2 hours a day</span>
               </li>
               <li className='flex items-center gap-2'>
                 <FaCheck />
-                <span className='text-base tracking-tight 1xl:text-sm font-semibold dark:text-white/60 text-black/70'>Be location independent</span>
+                <span className='text-base tracking-tight 1xl:text-sm font-medium dark:text-white/60 text-black/70'>Be location independent</span>
               </li>
               <li className='flex items-center gap-2'>
                 <FaCheck />
-                <span className='text-base tracking-tight 1xl:text-sm font-semibold dark:text-white/60 text-black/70'>No need for capital or expertise</span>
+                <span className='text-base tracking-tight 1xl:text-sm font-medium dark:text-white/60 text-black/70'>No need for capital or expertise</span>
               </li>
             </ul>
-            <div className="w-full h-[1px] dark:bg-white/40 bg-black/10 my-6" />
-
+            <div className="w-full h-[1px] dark:bg-white/20 bg-black/10 my-6 1xl:my-3.5" />
+            <p className=" dark:text-white/60 text-black/70 1xl:text-sm font-medium 1xl:leading-[18px]">Join our team of ambitious individuals committed to unlocking the secrets of wealth and success.</p>
           </div>
           <div>
 
