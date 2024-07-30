@@ -5,7 +5,8 @@ import { Audiowide, Syne } from "next/font/google";
 import Image from "next/image";
 import { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
-import { FaCircleDot } from "react-icons/fa6";
+import { FaCircleDot } from "react-icons/fa6"
+import PaymentOptions from "./payment";
 
 
 
@@ -95,6 +96,7 @@ const Pay = () => {
               </div>
               <div className="mt-5">
                 <span className={`${anton.className} uppercase text-xl 1xl:text-base`}>Payment method</span>
+                <PaymentOptions />
               </div>
             </div>
           </div>
