@@ -40,6 +40,6 @@ export const crschs = [
         title_hd: 'DANIEL HUSTLERS UNIVERITY',
         title: 'TikTok Course',
         main_image: '/csr/tiktok_tb.svg',
-        button_active_status: true,
+        button_active_status: false,
     },
 ]
