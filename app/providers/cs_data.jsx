@@ -33,6 +33,7 @@ export const crschs = [
         title_hd: 'DANIEL HUSTLERS UNIVERITY',
         title: 'Youtube Course',
         main_image: '/csr/youtube_tb.svg',
+        course_dd_img: '/social/youtube_icon.svg',
         button_active_status: true,
     },
     {
@@ -40,6 +41,7 @@ export const crschs = [
         title_hd: 'DANIEL HUSTLERS UNIVERITY',
         title: 'TikTok Course',
         main_image: '/csr/tiktok_tb.svg',
-        button_active_status: false,
+        course_dd_img: '/social/tiktok_icon.svg',
+        button_active_status: true,
     },
 ]

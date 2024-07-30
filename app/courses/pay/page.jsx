@@ -2,6 +2,7 @@
 
 import { crschs } from "@/app/providers/cs_data";
 import { Audiowide, Syne } from "next/font/google";
+import Image from "next/image";
 import { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
 import { FaCircleDot } from "react-icons/fa6";
@@ -64,7 +65,7 @@ const Pay = () => {
                     key={e.id}
                     onClick={() => handleSelect(e.id)}
                     className={`relative flex items-center gap-1 py-4 px-4 1xl:px-3 1xl:py-3 rounded-lg w-full trs_lg outline-none border-[1px] 
-          ${e.button_active_status ? (activeId === e.id ? 'dark:text-white bg-white/5 cursor-pointer dark:border-white/40' : 'cursor-pointer  dark:border-white/20 dark:text-white/60') : 'bg-white/5 opacity-30 cursor-not-allowed  dark:border-white/10'}
+          ${e.button_active_status ? (activeId === e.id ? 'dark:text-white dark:bg-white/5 bg-black/5 cursor-pointer dark:border-white/40' : 'cursor-pointer  dark:border-white/20 dark:text-white/60') : 'bg-white/5 opacity-30 cursor-not-allowed  dark:border-white/10'}
           `}
                     disabled={!e.button_active_status}
                   >
@@ -77,7 +78,17 @@ const Pay = () => {
                     )}
                     <div>
                       <div className={`font-semibold tracking-wider text-start max-w-[200px] text-[8px]`}>{e.title_hd}</div>
-                      <div className={`${syne.className} font-bold text-xl tracking-tighter text-start max-w-[200px]`}>{e.title}</div>
+                      <div className="flex items-center gap-3">
+                        <div className={`${syne.className} font-bold text-xl tracking-tighter text-start max-w-[200px]`}>{e.title}</div>
+                        <Image
+                          src={e.course_dd_img}
+                          className="pointer-events-none mb-[1px]"
+                          width={17}
+                          height={17}
+                          alt="back"
+                          priority={true}
+                        />
+                      </div>
                     </div>
                   </button>
                 ))}
