@@ -56,7 +56,7 @@ const Pay = () => {
             <div className="w-full h-[1px] dark:bg-white/20 bg-black/10 my-6 1xl:my-3.5" />
             <p className=" dark:text-white/60 text-black/70 1xl:text-sm font-medium 1xl:leading-[18px]">Join our team of ambitious individuals committed to unlocking the secrets of wealth and success.</p>
           </div>
-          <div className="px-1">
+          <div className="px-1 1xl:-mt-4">
             <div className="py-7 px-4 1xl:px-2.5 backdrop-blur-xl dark:bg-white/5 bg-[#f2f2f267] rounded-2xl 1xl:rounded-xl">
               <span className={`${anton.className} uppercase text-xl`}>Choose Course :</span>
               <div className="mt-3 flex flex-col gap-2">
@@ -78,13 +78,13 @@ const Pay = () => {
                     )}
                     <div>
                       <div className={`font-semibold tracking-wider text-start max-w-[200px] text-[8px]`}>{e.title_hd}</div>
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center gap-3 1xl:gap-2.5">
                         <div className={`${syne.className} font-bold text-xl tracking-tighter text-start max-w-[200px]`}>{e.title}</div>
                         <Image
                           src={e.course_dd_img}
                           className="pointer-events-none mb-[1px] 1xl:mt-[1px]"
-                          width={17}
-                          height={17}
+                          width={18}
+                          height={18}
                           alt="back"
                           priority={true}
                         />

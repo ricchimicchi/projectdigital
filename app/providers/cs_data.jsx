@@ -42,6 +42,6 @@ export const crschs = [
         title: 'TikTok Course',
         main_image: '/csr/tiktok_tb.svg',
         course_dd_img: '/social/tiktok_icon.svg',
-        button_active_status: true,
+        button_active_status: false,
     },
 ]
