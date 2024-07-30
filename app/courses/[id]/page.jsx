@@ -14,7 +14,6 @@ const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 
 const CourseDetail = ({ params }) => {
     const dataFilter = csrdd.find(e => e.id === parseInt(params.id, 10))
-    console.log(dataFilter)
 
     return (
         <section className='mt-10 1xl:mt-0 max-w-[1600px] mx-auto relative overflow-hidden'>
@@ -131,7 +130,7 @@ const CourseDetail = ({ params }) => {
                             boxs_dtl.map((e) => (
                                 <div key={e.id} className='dark:bg-white/5 bg-black/5 flex flex-col gap-3 1xl:gap-2 items-center p-3 py-12 1xl:py-8 rounded-lg backdrop-blur-lg'>
                                     <span className='block text-5xl 1xl:text-4xl'>{e.icon}</span>
-                                    <h3 className={`${anton.className} text-3xl 1xl:text-2xl font-semibold headline uppercase text-center`}>{e.title}</h3>
+                                    <h3 className={`${anton.className} text-3xl 1xl:text-2xl font-semibold uppercase text-center dark:text-white`}>{e.title}</h3>
                                     <p className='text-base font-medium text-center dark:text-white/70 1xl:text-sm 1xl:-mt-2'>{e.desc}</p>
                                 </div>
                             ))
