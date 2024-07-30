@@ -6,12 +6,10 @@ import Image from "next/image";
 import { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
 import { FaCircleDot } from "react-icons/fa6"
-import { IoLogoBitcoin, IoClose } from 'react-icons/io5';
+import { IoLogoBitcoin, IoClose, IoChevronDown } from 'react-icons/io5';
 import { RiVisaLine } from 'react-icons/ri';
 import { BiLogoMastercard } from 'react-icons/bi';
 import { AnimatePresence, motion } from 'framer-motion';
-
-
 
 const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 const syne = Syne({ subsets: ["latin"], weight: ['400', '500', '600', '700', '800'] });
@@ -46,7 +44,6 @@ const blockchainOptions = [
   { id: 3, name: 'Polygon' },
 ];
 
-
 const Pay = () => {
 
   const [activeId, setActiveId] = useState(
@@ -57,15 +54,15 @@ const Pay = () => {
     setActiveId(id);
   };
 
-
-
-
   const [selectedId, setSelectedId] = useState(null);
   const [popupOpen, setPopupOpen] = useState(false);
   const [blockchain, setBlockchain] = useState('');
 
   const handleSelectPayment = (id) => {
     setSelectedId(id);
+    if (id !== 1) {
+      setBlockchain('');
+    }
     setPopupOpen(false);
   };
 
@@ -73,6 +70,14 @@ const Pay = () => {
     setPopupOpen(true);
   }
 
+  const [selectedBlockchain, setSelectedBlockchain] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOptionClick = (name) => {
+    setSelectedBlockchain(name);
+    setBlockchain(name);
+    setIsOpen(false);
+  }
 
   return (
     <>
@@ -115,9 +120,7 @@ const Pay = () => {
                     <button
                       key={e.id}
                       onClick={() => handleSelect(e.id)}
-                      className={`relative flex items-center gap-1 py-4 px-4 1xl:px-3 1xl:py-3 rounded-lg w-full trs_lg outline-none border-[1px] 
-          ${e.button_active_status ? (activeId === e.id ? 'dark:text-white dark:bg-white/5 bg-black/5 cursor-pointer dark:border-white/40' : 'cursor-pointer  dark:border-white/20 dark:text-white/60') : 'bg-white/5 opacity-30 cursor-not-allowed  dark:border-white/10'}
-          `}
+                      className={`relative flex items-center gap-1 py-4 px-4 1xl:px-3 1xl:py-3 rounded-lg w-full trs_lg outline-none border-[1px] ${e.button_active_status ? (activeId === e.id ? 'dark:text-white dark:bg-white/5 bg-black/5 cursor-pointer dark:border-white/40' : 'cursor-pointer  dark:border-white/20 dark:text-white/60') : 'bg-white/5 opacity-30 cursor-not-allowed  dark:border-white/10'}`}
                       disabled={!e.button_active_status}
                     >
                       {activeId === e.id ? (
@@ -153,39 +156,55 @@ const Pay = () => {
                           key={e.id}
                           onClick={() => handleSelectPayment(e.id)}
                           className={`relative flex items-center gap-1 py-2 px-2 rounded-lg w-full trs_lg outline-none border-[1px] 
-            ${selectedId === e.id ? 'text-white cursor-pointer border-white' : 'cursor-pointer border-white/40'}
+            ${selectedId === e.id ? 'dark:text-white cursor-pointer dark:border-white border-black/50 bg-[#f5f5f5] dark:bg-white/5' : 'cursor-pointer dark:border-white/30'}
             `}
                         >
                           {selectedId === e.id ? (
-                            <span className="absolute top-4 right-4 text-xl 1xl:text-lg 1xl:top-1.5 1xl:right-1.5 dark:text-white trs_lg">
+                            <span className="absolute top-2.5 right-2.5 text-xl dark:text-white trs_lg 1xl:top-1.5 1xl:right-1.5">
                               {e.img_icc}
                             </span>
                           ) : (
-                            <div className="w-5 h-5 rounded-full border-[#ffffff35] border-[1px] absolute top-3 right-4 1xl:top-1.5 1xl:right-1.5"></div>
+                            <div className="w-5 h-5 rounded-full dark:border-[#ffffff35] border-[#cdcdcd57] border-[1px] absolute top-2.5 right-2.5 1xl:top-1.5 1xl:right-1.5"></div>
                           )}
                           <div className='flex flex-col gap-4 items-start'>
                             <span className='text-2xl 1xl:text-lg'>{e.payment_method_img}</span>
-                            <span>{e.title}</span>
+                            <span className={`${syne.className} font-bold tracking-[-1px] 1xl:text-sm`}>{e.title}</span>
                           </div>
                         </button>
                       ))}
                     </div>
 
                     {selectedId === 1 && (
-                      <div className="mt-4">
-                        <label htmlFor="blockchain" className="block text-sm font-medium text-gray-700">Select Blockchain:</label>
-                        <select
-                          id="blockchain"
-                          name="blockchain"
-                          className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-black rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                          value={blockchain}
-                          onChange={(e) => setBlockchain(e.target.value)}
+                      <div className="relative mt-5">
+                        <div
+                          className="flex items-center justify-between w-full py-2 px-3 border border-gray-300 bg-black text-white rounded-md cursor-pointer select-none"
+                          onClick={() => setIsOpen(!isOpen)}
                         >
-                          <option value="">Select a blockchain</option>
-                          {blockchainOptions.map((option) => (
-                            <option key={option.id} value={option.name}>{option.name}</option>
-                          ))}
-                        </select>
+                          <span>{selectedBlockchain || 'Select a blockchain'}</span>
+                          <IoChevronDown className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                        </div>
+
+                        <AnimatePresence>
+                          {isOpen && (
+                            <motion.div
+                              initial={{ opacity: 0, y: -10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              exit={{ opacity: 0, y: -10 }}
+                              transition={{ duration: 0.2 }}
+                              className="absolute z-10 w-full mt-1 py-2 border border-gray-300 bg-black rounded-md shadow-lg"
+                            >
+                              {blockchainOptions.map((option) => (
+                                <div
+                                  key={option.id}
+                                  onClick={() => handleOptionClick(option.name)}
+                                  className="cursor-pointer hover:bg-gray-700 px-4 py-2 text-white"
+                                >
+                                  {option.name}
+                                </div>
+                              ))}
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
                       </div>
                     )}
 
@@ -196,12 +215,6 @@ const Pay = () => {
                       Continue
                     </button>
                   </div>
-
-
-
-
-
-
                 </div>
               </div>
             </div>
@@ -226,12 +239,12 @@ const Pay = () => {
               {selectedId === 1 ? (
                 <div className="text-white">
                   <h2 className="text-2xl mb-4">Selected Blockchain</h2>
-                  <p>{blockchain}</p>
+                  <p>{blockchain || 'No blockchain selected'}</p>
                 </div>
               ) : (
                 <div className="text-white">
-                  <h2 className="text-2xl mb-4">Title</h2>
-                  <p>Payment details for</p>
+                  <h2 className="text-2xl mb-4">Payment Details</h2>
+                  <p>Payment details for {pytcrs.find((item) => item.id === selectedId)?.title}</p>
                 </div>
               )}
             </div>
@@ -243,4 +256,4 @@ const Pay = () => {
   )
 }
 
-export default Pay
+export default Pay;
