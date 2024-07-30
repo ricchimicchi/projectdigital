@@ -318,9 +318,9 @@ const Pay = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "0%" }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 dark:bg-black/50 bg-black/10 flex items-center justify-center backdrop-blur-sm z-[999999999] px-2"
+            className="fixed inset-0 dark:bg-black/50 bg-black/5 flex items-center justify-center backdrop-blur-sm z-[999999999] px-2"
           >
-            <div className="p-6 1xl:p-4 backdrop-blur-xl w-full max-w-[400px] dark:bg-[#bbbbbb04] border-[1px] dark:border-white/20 border-black/10 rounded-3xl relative" onClick={(e) => e.stopPropagation()}>
+            <div className="p-6 1xl:p-4 backdrop-blur-xl w-full max-w-[400px] dark:bg-[#bbbbbb04] bg-white border-[1px] dark:border-white/20 border-black/10 rounded-3xl relative" onClick={(e) => e.stopPropagation()}>
               <button onClick={() => setPopupOpen(false)} className="text-3xl absolute top-2 right-3 dark:text-white">
                 <IoClose />
               </button>
@@ -356,7 +356,7 @@ const Pay = () => {
                             <MdOutlineContentCopy />
                           </button>
                         </div>
-                        <div className="mt-2 px-2 py-5 border-[1px] dark:border-white/10 border-black/10 rounded-lg">
+                        <div className="mt-2 px-2 pt-5 pb-2 border-[1px] dark:border-white/10 border-black/10 rounded-lg">
                           <span className="block text-xs text-center tracking-wide font-medium dark:text-white text-[#18191b]">Amount to be received</span>
                           <div className="flex items-center justify-center gap-2 mt-1">
                             <Image
@@ -381,8 +381,15 @@ const Pay = () => {
                             <span className="flex items-center justify-center gap-2 font-semibold tracking-tight text-xs text-yellow-500">Warning <PiWarningFill /></span>
                             <p className="text-[10px] mt-1 font-medium dark:text-white/60 text-black/60">After you send the money, you need to write to the administrator.</p>
                           </div>
-                          <Link href={'/'} className="mt-2 px-3 py-2 text-xs font-medium text-center">
+                          <Link href={'/'} className="mt-2 px-3 py-2 text-xs font-medium text-center w-full flex items-center justify-center gap-2 border-[1px] dark:border-white/10 border-black/10 rounded-lg transition-all hover:bg-black/5">
                             Write Administrator
+                            <Image
+                              src='/social/telegram.svg'
+                              className="!pointer-events-none"
+                              width={22}
+                              height={22}
+                              alt='telegram'
+                            />
                           </Link>
                         </div>
                       </div>
