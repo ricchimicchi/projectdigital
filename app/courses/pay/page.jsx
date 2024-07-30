@@ -27,7 +27,7 @@ export const pytcrs = [
     payment_method_img: <Image
       src='/crypto/visa.svg'
       className="pointer-events-none mb-[2px]"
-      width={24}
+      width={26}
       height={22}
       alt="back"
       priority={true}
@@ -187,12 +187,12 @@ const Pay = () => {
                     </div>
 
                     {selectedId === 1 && (
-                      <div className="relative mt-1">
+                      <div className="relative mt-3">
                         <div
-                          className="flex items-center justify-between  dark:border-white/40 border-[1px] w-full py-2 px-3 rounded-md cursor-pointer select-none"
+                          className="flex items-center justify-between dark:border-white/40 border-[1px] dark:bg-[#15171b] dark:border-white/10' w-full py-3 px-3 rounded-md cursor-pointer select-none"
                           onClick={() => setIsOpen(!isOpen)}
                         >
-                          <span>{selectedBlockchain || 'Select a blockchain'}</span>
+                          <span className={`${anton.className} uppercase text-xs dark:text-white`}>{selectedBlockchain || 'Select a blockchain'}</span>
                           <IoChevronDown className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                         </div>
 
@@ -203,13 +203,13 @@ const Pay = () => {
                               animate={{ opacity: 1, y: 0 }}
                               exit={{ opacity: 0, y: -10 }}
                               transition={{ duration: 0.2 }}
-                              className="absolute z-10 w-full mt-1 py-2 border-[1px] dark:bg-[#0d0813] dark:bg-white/5 bg-black/5 cursor-pointer dark:border-white/40  rounded-md shadow-lg"
+                              className="absolute z-10 w-full mt-1 py-2 border-[1px] dark:bg-[#15171b] bg-[#fafafa] cursor-pointer dark:border-white/40  rounded-md shadow-lg max-h-24 overflow-y-scroll"
                             >
                               {blockchainOptions.map((option) => (
                                 <div
                                   key={option.id}
                                   onClick={() => handleOptionClick(option.name)}
-                                  className="cursor-pointer hover:bg-gray-700 px-4 py-2 text-white"
+                                  className="cursor-pointer px-4 py-2 dark:text-white"
                                 >
                                   {option.name}
                                 </div>
