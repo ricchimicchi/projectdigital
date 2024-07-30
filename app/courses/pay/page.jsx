@@ -156,7 +156,7 @@ const Pay = () => {
                           key={e.id}
                           onClick={() => handleSelectPayment(e.id)}
                           className={`relative flex items-center gap-1 py-2 px-2 rounded-lg w-full trs_lg outline-none border-[1px] 
-            ${selectedId === e.id ? 'dark:text-white cursor-pointer dark:border-white border-black/50 bg-[#f5f5f5] dark:bg-white/5' : 'cursor-pointer dark:border-white/30'}
+            ${selectedId === e.id ? 'dark:text-white dark:bg-white/5 bg-black/5 cursor-pointer dark:border-white/40' : 'cursor-pointer dark:border-white/30'}
             `}
                         >
                           {selectedId === e.id ? (
