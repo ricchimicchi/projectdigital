@@ -60,6 +60,7 @@ export const blockchainOptions = [
         crypto_qr_img_dark: '/payment/payment_qr/usdt_trc_20_qr.svg',
         crypto_qr_img_light: '/payment/payment_qr/usdt_trc_20_qr.svg',
         main_amount: '24.99',
+        equal_crypto_price: '24.99'
     },
     {
         id: 2,
@@ -70,6 +71,7 @@ export const blockchainOptions = [
         crypto_qr_img_dark: '/payment/payment_qr/usdc_erc_20_qr.svg',
         crypto_qr_img_light: '/payment/payment_qr/usdc_erc_20_qr.svg',
         main_amount: '24.99',
+        equal_crypto_price: '24.99'
     },
     {
         id: 3,
@@ -80,6 +82,7 @@ export const blockchainOptions = [
         crypto_qr_img_dark: '/payment/payment_qr/eth_erc_20.svg',
         crypto_qr_img_light: '/payment/payment_qr/eth_erc_20.svg',
         main_amount: '24.99',
+        equal_crypto_price: '0.0076'
     },
     {
         id: 4,
@@ -90,6 +93,7 @@ export const blockchainOptions = [
         crypto_qr_img_dark: '/payment/payment_qr/bnb_qr.svg',
         crypto_qr_img_light: '/payment/payment_qr/bnb_qr.svg',
         main_amount: '24.99',
+        equal_crypto_price: '0.043'
     },
     {
         id: 5,
@@ -100,6 +104,7 @@ export const blockchainOptions = [
         crypto_qr_img_dark: '/payment/payment_qr/ltc.svg',
         crypto_qr_img_light: '/payment/payment_qr/ltc.svg',
         main_amount: '24.99',
+        equal_crypto_price: '0.35'
     },
     {
         id: 6,
@@ -110,6 +115,7 @@ export const blockchainOptions = [
         crypto_qr_img_dark: '/payment/payment_qr/btc.svg',
         crypto_qr_img_light: '/payment/payment_qr/btc.svg',
         main_amount: '24.99',
+        equal_crypto_price: '0.00038'
     },
     {
         id: 7,
@@ -120,6 +126,7 @@ export const blockchainOptions = [
         crypto_qr_img_dark: '/payment/payment_qr/ton_qr.svg',
         crypto_qr_img_light: '/payment/payment_qr/ton_qr.svg',
         main_amount: '24.99',
+        equal_crypto_price: '3.7145'
     },
    
 ];

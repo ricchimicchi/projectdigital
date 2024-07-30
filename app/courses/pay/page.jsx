@@ -111,6 +111,28 @@ const Pay = () => {
   const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
+
+  const handleCopyAddress = () => {
+    navigator.clipboard.writeText(selectedOption.crypto_address)
+      .then(() => {
+        alert('Copied!');
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  };
+
+  const handleCopyAmount = () => {
+    navigator.clipboard.writeText(selectedOption.equal_crypto_price)
+      .then(() => {
+        alert('Copied!');
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  };
+
+
   return (
     <>
       <section className="pt-20 1xl:pt-8 relative">
@@ -296,10 +318,10 @@ const Pay = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "0%" }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 dark:bg-black/50 bg-black/5 flex items-center justify-center backdrop-blur-sm z-[999999999]"
+            className="fixed inset-0 dark:bg-black/50 bg-black/10 flex items-center justify-center backdrop-blur-sm z-[999999999] px-2"
           >
-            <div className="p-6 1xl:p-4 backdrop-blur-xl w-full max-w-[400px] dark:bg-[#bbbbbb04] border-[1px] border-white/20 rounded-3xl relative" onClick={(e) => e.stopPropagation()}>
-              <button onClick={() => setPopupOpen(false)} className="text-3xl absolute top-2 right-3 text-white">
+            <div className="p-6 1xl:p-4 backdrop-blur-xl w-full max-w-[400px] dark:bg-[#bbbbbb04] border-[1px] dark:border-white/20 border-black/10 rounded-3xl relative" onClick={(e) => e.stopPropagation()}>
+              <button onClick={() => setPopupOpen(false)} className="text-3xl absolute top-2 right-3 dark:text-white">
                 <IoClose />
               </button>
               {selectedId === 1 ? (
@@ -309,7 +331,7 @@ const Pay = () => {
                       <div className="flex items-center justify-center mt-2">
                         <Image
                           src={selectedOption.crypto_qr_img_dark}
-                          className="rounded-lg p-1.5 border-[1px] dark:border-white/10 !pointer-events-none"
+                          className="rounded-lg p-1.5 border-[1px] dark:border-white/10 border-black/10 !pointer-events-none"
                           width={170}
                           height={170}
                           alt='crpt'
@@ -328,13 +350,13 @@ const Pay = () => {
 
                       <div className="mt-6 1xl:mt-3 tracking-wide">
                         <span className="text-xs font-medium dark:text-white/50">Send to this address</span>
-                        <div className="flex items-center justify-between gap-6 px-2 py-2 border-[1px] dark:border-white/10 rounded-lg mt-1">
-                          <span className="text-xs  font-medium">{selectedOption.crypto_address}</span>
-                          <button>
+                        <div className="flex items-center justify-between gap-6 px-2 py-2 border-[1px] dark:border-white/10 border-black/10 rounded-lg mt-1">
+                          <span className="text-[10px] font-medium">{selectedOption.crypto_address}</span>
+                          <button onClick={handleCopyAddress}>
                             <MdOutlineContentCopy />
                           </button>
                         </div>
-                        <div className="mt-2 px-2 py-5 border-[1px] dark:border-white/10 rounded-lg">
+                        <div className="mt-2 px-2 py-5 border-[1px] dark:border-white/10 border-black/10 rounded-lg">
                           <span className="block text-xs text-center tracking-wide font-medium dark:text-white text-[#18191b]">Amount to be received</span>
                           <div className="flex items-center justify-center gap-2 mt-1">
                             <Image
@@ -345,11 +367,11 @@ const Pay = () => {
                               alt='crpt'
                             />
                             <div className="flex items-center gap-0.5">
-                              <span className="text-xs font-medium dark:text-white text-[#18191b]">{selectedOption.main_amount}</span>
+                              <span className="text-xs font-medium dark:text-white text-[#18191b]">{selectedOption.equal_crypto_price}</span>
                               <span className="text-xs font-medium dark:text-white text-[#18191b]">{selectedOption.crypto_name}</span>
                               <span className="text-xs font-medium dark:text-white text-[#18191b]">{selectedOption.crypto_network}</span>
                             </div>
-                            <button className="">
+                            <button onClick={handleCopyAmount}>
                               <MdOutlineContentCopy />
                             </button>
                           </div>
@@ -359,7 +381,7 @@ const Pay = () => {
                             <span className="flex items-center justify-center gap-2 font-semibold tracking-tight text-xs text-yellow-500">Warning <PiWarningFill /></span>
                             <p className="text-[10px] mt-1 font-medium dark:text-white/60 text-black/60">After you send the money, you need to write to the administrator.</p>
                           </div>
-                          <Link href={'/'} className="mt-2 px-3 py-2 text-xs font-medium">
+                          <Link href={'/'} className="mt-2 px-3 py-2 text-xs font-medium text-center">
                             Write Administrator
                           </Link>
                         </div>
