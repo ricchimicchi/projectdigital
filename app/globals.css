@@ -108,3 +108,7 @@ html {
         box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
     }
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}

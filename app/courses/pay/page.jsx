@@ -1,6 +1,6 @@
 'use client'
 
-import { crschs } from "@/app/providers/cs_data";
+import { blockchainOptions, crschs } from "@/app/providers/cs_data";
 import { Audiowide, Syne } from "next/font/google";
 import Image from "next/image";
 import { useState } from "react";
@@ -8,6 +8,7 @@ import { FaCheck } from "react-icons/fa6";
 import { FaCircleDot } from "react-icons/fa6"
 import { IoLogoBitcoin, IoClose, IoChevronDown } from 'react-icons/io5';
 import { AnimatePresence, motion } from 'framer-motion';
+
 
 const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 const syne = Syne({ subsets: ["latin"], weight: ['400', '500', '600', '700', '800'] });
@@ -50,11 +51,6 @@ export const pytcrs = [
   }
 ];
 
-const blockchainOptions = [
-  { id: 1, name: 'Ethereum' },
-  { id: 2, name: 'Binance Smart Chain' },
-  { id: 3, name: 'Polygon' },
-];
 
 const Pay = () => {
 
@@ -90,6 +86,10 @@ const Pay = () => {
     setBlockchain(name);
     setIsOpen(false);
   }
+
+  const selectedOption = blockchainOptions.find(option => option.crypto_name === selectedBlockchain);
+  ;
+
 
   return (
     <>
@@ -192,7 +192,24 @@ const Pay = () => {
                           className="flex items-center justify-between dark:border-white/40 border-[1px] dark:bg-[#15171b] dark:border-white/10' w-full py-3 px-3 rounded-md cursor-pointer select-none"
                           onClick={() => setIsOpen(!isOpen)}
                         >
-                          <span className={`${anton.className} uppercase text-xs dark:text-white`}>{selectedBlockchain || 'Select a blockchain'}</span>
+                          {selectedOption ? (
+                            <div className="flex items-center gap-3">
+                              <Image
+                                src={selectedOption.crypto_logo}
+                                className="pointer-events-none"
+                                width={22}
+                                height={22}
+                                alt={selectedOption.crypto_name}
+                                priority={true}
+                              />
+                              <div className="flex items-center gap-2">
+                                <span className={`${anton.className} uppercase text-xs dark:text-white`}>{selectedOption.crypto_name}</span>
+                                <span className={`${anton.className} text-[10px] dark:text-white/60`}>{selectedOption.crypto_network}</span>
+                              </div>
+                            </div>
+                          ) : (
+                            <span className={`${anton.className} uppercase text-xs dark:text-white`}>{'Select a blockchain'}</span>
+                          )}
                           <IoChevronDown className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                         </div>
 
@@ -203,15 +220,28 @@ const Pay = () => {
                               animate={{ opacity: 1, y: 0 }}
                               exit={{ opacity: 0, y: -10 }}
                               transition={{ duration: 0.2 }}
-                              className="absolute z-10 w-full mt-1 py-2 border-[1px] dark:bg-[#15171b] bg-[#fafafa] cursor-pointer dark:border-white/40  rounded-md shadow-lg max-h-24 overflow-y-scroll"
+                              className="absolute z-10 w-full mt-[7px] py-2 border-[1px] dark:bg-[#15171b] bg-[#fafafa] cursor-pointer dark:border-white/40  rounded-md shadow-lg max-h-24 overflow-y-scroll no-scrollbar"
                             >
                               {blockchainOptions.map((option) => (
                                 <div
                                   key={option.id}
-                                  onClick={() => handleOptionClick(option.name)}
-                                  className="cursor-pointer px-4 py-2 dark:text-white"
+                                  onClick={() => handleOptionClick(option.crypto_name)}
+                                  className="cursor-pointer px-4 1xl:px-2 py-2 dark:text-white"
                                 >
-                                  {option.name}
+                                  <div className="flex items-center gap-3">
+                                    <Image
+                                      src={option.crypto_logo}
+                                      className="pointer-events-none"
+                                      width={22}
+                                      height={22}
+                                      alt={option.crypto_name}
+                                      priority={true}
+                                    />
+                                    <div className="flex items-center gap-2">
+                                      <span className={`${anton.className} uppercase text-[10px] dark:text-white/60`}>{option.crypto_name}</span>
+                                      <span className={`${anton.className} uppercase text-sm`}>{option.crypto_network}</span>
+                                    </div>
+                                  </div>
                                 </div>
                               ))}
                             </motion.div>
