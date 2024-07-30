@@ -7,8 +7,6 @@ import { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
 import { FaCircleDot } from "react-icons/fa6"
 import { IoLogoBitcoin, IoClose, IoChevronDown } from 'react-icons/io5';
-import { RiVisaLine } from 'react-icons/ri';
-import { BiLogoMastercard } from 'react-icons/bi';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
@@ -26,14 +24,28 @@ export const pytcrs = [
     id: 2,
     title: 'Visa',
     img_icc: <FaCircleDot />,
-    payment_method_img: <RiVisaLine />,
+    payment_method_img: <Image
+      src='/crypto/visa.svg'
+      className="pointer-events-none mb-[2px]"
+      width={24}
+      height={22}
+      alt="back"
+      priority={true}
+    />,
     access: true,
   },
   {
     id: 3,
     title: 'Master card',
     img_icc: <FaCircleDot />,
-    payment_method_img: <BiLogoMastercard />,
+    payment_method_img: <Image
+      src='/crypto/mastercard.svg'
+      className="pointer-events-none mb-[1px] 1xl:mt-[1px]"
+      width={20}
+      height={20}
+      alt="back"
+      priority={true}
+    />,
     access: true,
   }
 ];
@@ -81,7 +93,7 @@ const Pay = () => {
 
   return (
     <>
-      <section className="pt-20 relative">
+      <section className="pt-20 1xl:pt-8 relative">
         <div className="main_bg dark:block hidden"></div>
         <div className="max-w-[1115px] mx-auto">
           <div className="grid grid-cols-2 2xl:grid-cols-1 gap-12 pt-16 1xl:pt-14">
@@ -113,7 +125,7 @@ const Pay = () => {
               <p className=" dark:text-white/60 text-black/70 1xl:text-sm font-medium 1xl:leading-[18px]">Join our team of ambitious individuals committed to unlocking the secrets of wealth and success.</p>
             </div>
             <div className="px-1 1xl:-mt-4">
-              <div className="py-7 px-4 1xl:py-5 1xl:px-2.5 backdrop-blur-xl dark:bg-white/5 bg-[#f2f2f267] rounded-2xl 1xl:rounded-xl shadow-2xl">
+              <div className="py-7 px-4 1xl:py-4 1xl:px-2.5 backdrop-blur-xl dark:bg-white/5 bg-[#f2f2f267] rounded-2xl 1xl:rounded-xl shadow-2xl">
                 <span className={`${anton.className} uppercase text-xl 1xl:text-base`}>Choose Course</span>
                 <div className="mt-3 flex flex-col gap-2">
                   {crschs.map((e) => (
@@ -167,17 +179,17 @@ const Pay = () => {
                             <div className="w-5 h-5 rounded-full dark:border-[#ffffff35] border-[#cdcdcd57] border-[1px] absolute top-2.5 right-2.5 1xl:top-1.5 1xl:right-1.5"></div>
                           )}
                           <div className='flex flex-col gap-4 items-start'>
-                            <span className='text-2xl 1xl:text-lg'>{e.payment_method_img}</span>
-                            <span className={`${syne.className} font-bold tracking-[-1px] 1xl:text-sm`}>{e.title}</span>
+                            <span>{e.payment_method_img}</span>
+                            <span className={`${anton.className} font-bold text-sm 1xl:text-[11px] uppercase`}>{e.title}</span>
                           </div>
                         </button>
                       ))}
                     </div>
 
                     {selectedId === 1 && (
-                      <div className="relative mt-5">
+                      <div className="relative mt-1">
                         <div
-                          className="flex items-center justify-between w-full py-2 px-3 border border-gray-300 bg-black text-white rounded-md cursor-pointer select-none"
+                          className="flex items-center justify-between  dark:border-white/40 border-[1px] w-full py-2 px-3 rounded-md cursor-pointer select-none"
                           onClick={() => setIsOpen(!isOpen)}
                         >
                           <span>{selectedBlockchain || 'Select a blockchain'}</span>
@@ -191,7 +203,7 @@ const Pay = () => {
                               animate={{ opacity: 1, y: 0 }}
                               exit={{ opacity: 0, y: -10 }}
                               transition={{ duration: 0.2 }}
-                              className="absolute z-10 w-full mt-1 py-2 border border-gray-300 bg-black rounded-md shadow-lg"
+                              className="absolute z-10 w-full mt-1 py-2 border-[1px] dark:bg-[#0d0813] dark:bg-white/5 bg-black/5 cursor-pointer dark:border-white/40  rounded-md shadow-lg"
                             >
                               {blockchainOptions.map((option) => (
                                 <div
@@ -208,9 +220,15 @@ const Pay = () => {
                       </div>
                     )}
 
+                    <div className="mt-16 flex items-center justify-between w-full">
+                      <h4 className={`${anton.className} text-sm font-semibold uppercase`}>Total Price</h4>
+                      <span className={`${anton.className} text-lg font-semibold`}>$24.99 <span className="dark:text-white/60 text-[9px] uppercase">(Lifetime)</span></span>
+                    </div>
+
+
                     <button
                       onClick={handleSubmit}
-                      className="mt-4 px-4 py-2 dark:bg-white dark:text-black text-white bg-black rounded-lg w-full"
+                      className={`${anton.className} mt-4 px-4 py-2 border-[1px] rounded-lg w-full uppercase dark:text-white dark:bg-white/5 bg-black/5 cursor-pointer dark:border-white/40`}
                     >
                       Continue
                     </button>
