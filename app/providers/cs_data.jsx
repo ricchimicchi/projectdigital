@@ -9,7 +9,7 @@ export const csrdd = [
         discount_interest: '83',
         main_image: '/csr/youtube_tb.svg',
         button_active_status: true,
-        button_text: 'GET NOW' 
+        button_text: 'GET NOW'
     },
     {
         id: 1365490,
@@ -21,7 +21,25 @@ export const csrdd = [
         discount_interest: '86',
         main_image: '/csr/tiktok_tb.svg',
         button_active_status: false,
-        button_text: 'COMING SOON' 
+        button_text: 'COMING SOON'
     },
 
+]
+
+
+export const crschs = [
+    {
+        id: 1365489,
+        title_hd: 'DANIEL HUSTLERS UNIVERITY',
+        title: 'Youtube Full Automation Course',
+        main_image: '/csr/youtube_tb.svg',
+        button_active_status: true,
+    },
+    {
+        id: 1365490,
+        title_hd: 'DANIEL HUSTLERS UNIVERITY',
+        title: 'TikTok Creativity Program Full AI Course',
+        main_image: '/csr/tiktok_tb.svg',
+        button_active_status: true,
+    },
 ]
