@@ -350,8 +350,8 @@ const Pay = () => {
 
                       <div className="mt-6 1xl:mt-3 tracking-wide">
                         <span className="text-xs font-medium dark:text-white/50">Send to this address</span>
-                        <div className="flex items-center justify-between gap-6 px-2 py-2 border-[1px] dark:border-white/10 border-black/10 rounded-lg mt-1">
-                          <span className="text-[10px] font-medium">{selectedOption.crypto_address}</span>
+                        <div className="flex items-center justify-between gap-6 1xl:gap-1 px-2 py-2 border-[1px] dark:border-white/10 border-black/10 rounded-lg mt-1">
+                          <span className="text-[10px] 1xl:text-[9px] font-medium">{selectedOption.crypto_address}</span>
                           <button onClick={handleCopyAddress}>
                             <MdOutlineContentCopy />
                           </button>
