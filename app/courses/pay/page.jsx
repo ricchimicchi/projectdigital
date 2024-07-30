@@ -3,12 +3,14 @@
 import { blockchainOptions, crschs } from "@/app/providers/cs_data";
 import { Audiowide, Syne } from "next/font/google";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaCheck } from "react-icons/fa6";
-import { FaCircleDot } from "react-icons/fa6"
+import { FaCircleDot } from "react-icons/fa6";
 import { IoLogoBitcoin, IoClose, IoChevronDown } from 'react-icons/io5';
 import { AnimatePresence, motion } from 'framer-motion';
-
+import { MdOutlineContentCopy } from "react-icons/md";
+import { PiWarningFill } from "react-icons/pi";
+import Link from "next/link";
 
 const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 const syne = Syne({ subsets: ["latin"], weight: ['400', '500', '600', '700', '800'] });
@@ -30,7 +32,7 @@ export const pytcrs = [
       className="pointer-events-none mb-[2px]"
       width={26}
       height={22}
-      alt="back"
+      alt="Visa"
       priority={true}
     />,
     access: true,
@@ -44,16 +46,14 @@ export const pytcrs = [
       className="pointer-events-none mb-[1px] 1xl:mt-[1px]"
       width={20}
       height={20}
-      alt="back"
+      alt="MasterCard"
       priority={true}
     />,
     access: true,
   }
 ];
 
-
 const Pay = () => {
-
   const [activeId, setActiveId] = useState(
     crschs.find((course) => course.button_active_status).id
   );
@@ -88,8 +88,28 @@ const Pay = () => {
   }
 
   const selectedOption = blockchainOptions.find(option => option.crypto_name === selectedBlockchain);
-  ;
 
+  const initialTime = 3 * 60 * 60 * 1000;
+  const [timeRemaining, setTimeRemaining] = useState(initialTime);
+
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeRemaining(prevTime => {
+        if (prevTime <= 0) {
+          clearInterval(interval);
+          return 0;
+        }
+        return prevTime - 1000;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
   return (
     <>
@@ -151,7 +171,7 @@ const Pay = () => {
                             className="pointer-events-none mb-[1px] 1xl:mt-[1px]"
                             width={18}
                             height={18}
-                            alt="back"
+                            alt="course image"
                             priority={true}
                           />
                         </div>
@@ -197,8 +217,8 @@ const Pay = () => {
                               <Image
                                 src={selectedOption.crypto_logo}
                                 className="pointer-events-none"
-                                width={22}
-                                height={22}
+                                width={24}
+                                height={24}
                                 alt={selectedOption.crypto_name}
                                 priority={true}
                               />
@@ -232,8 +252,8 @@ const Pay = () => {
                                     <Image
                                       src={option.crypto_logo}
                                       className="pointer-events-none"
-                                      width={22}
-                                      height={22}
+                                      width={24}
+                                      height={24}
                                       alt={option.crypto_name}
                                       priority={true}
                                     />
@@ -254,7 +274,6 @@ const Pay = () => {
                       <h4 className={`${anton.className} text-sm font-semibold uppercase`}>Total Price</h4>
                       <span className={`${anton.className} text-lg font-semibold`}>$24.99 <span className="dark:text-white/60 text-[9px] uppercase">(Lifetime)</span></span>
                     </div>
-
 
                     <button
                       onClick={handleSubmit}
@@ -277,17 +296,78 @@ const Pay = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "0%" }}
             transition={{ duration: 0.3 }}
-            onClick={() => setPopupOpen(false)}
             className="fixed inset-0 dark:bg-black/50 bg-black/5 flex items-center justify-center backdrop-blur-sm z-[999999999]"
           >
-            <div className="p-6 1xl:p-4 backdrop-blur-xl bg-black/80 rounded-lg relative" onClick={(e) => e.stopPropagation()}>
+            <div className="p-6 1xl:p-4 backdrop-blur-xl w-full max-w-[400px] dark:bg-[#bbbbbb04] border-[1px] border-white/20 rounded-3xl relative" onClick={(e) => e.stopPropagation()}>
               <button onClick={() => setPopupOpen(false)} className="text-3xl absolute top-2 right-3 text-white">
                 <IoClose />
               </button>
               {selectedId === 1 ? (
-                <div className="text-white">
-                  <h2 className="text-2xl mb-4">Selected Blockchain</h2>
-                  <p>{blockchain || 'No blockchain selected'}</p>
+                <div className="">
+                  {selectedOption ? (
+                    <div>
+                      <div className="flex items-center justify-center mt-2">
+                        <Image
+                          src={selectedOption.crypto_qr_img_dark}
+                          className="rounded-lg p-1.5 border-[1px] dark:border-white/10 !pointer-events-none"
+                          width={170}
+                          height={170}
+                          alt='crpt'
+                        />
+                      </div>
+                      <div className="flex items-center justify-center gap-2 mt-5 1xl:mt-3">
+                        <p className="text-xs font-medium dark:text-white/60">Time left to pay: </p>
+                        <div className="flex items-center gap-[0.01rem]">
+                          <span className="text-sm font-medium">{String(hours).padStart(2, '0')}</span>
+                          <span className="text-sm font-medium">:</span>
+                          <span className="text-sm font-medium">{String(minutes).padStart(2, '0')}</span>
+                          <span className="text-sm font-medium">:</span>
+                          <span className="text-sm font-medium">{String(seconds).padStart(2, '0')}</span>
+                        </div>
+                      </div>
+
+                      <div className="mt-6 1xl:mt-3 tracking-wide">
+                        <span className="text-xs font-medium dark:text-white/50">Send to this address</span>
+                        <div className="flex items-center justify-between gap-6 px-2 py-2 border-[1px] dark:border-white/10 rounded-lg mt-1">
+                          <span className="text-xs  font-medium">{selectedOption.crypto_address}</span>
+                          <button>
+                            <MdOutlineContentCopy />
+                          </button>
+                        </div>
+                        <div className="mt-2 px-2 py-5 border-[1px] dark:border-white/10 rounded-lg">
+                          <span className="block text-xs text-center tracking-wide font-medium dark:text-white text-[#18191b]">Amount to be received</span>
+                          <div className="flex items-center justify-center gap-2 mt-1">
+                            <Image
+                              src={selectedOption.crypto_logo}
+                              className="!pointer-events-none"
+                              width={22}
+                              height={22}
+                              alt='crpt'
+                            />
+                            <div className="flex items-center gap-0.5">
+                              <span className="text-xs font-medium dark:text-white text-[#18191b]">{selectedOption.main_amount}</span>
+                              <span className="text-xs font-medium dark:text-white text-[#18191b]">{selectedOption.crypto_name}</span>
+                              <span className="text-xs font-medium dark:text-white text-[#18191b]">{selectedOption.crypto_network}</span>
+                            </div>
+                            <button className="">
+                              <MdOutlineContentCopy />
+                            </button>
+                          </div>
+                          <span className="block text-xs font-medium text-center mt-1">Please account for gas fees</span>
+
+                          <div className="text-center mt-2">
+                            <span className="flex items-center justify-center gap-2 font-semibold tracking-tight text-xs text-yellow-500">Warning <PiWarningFill /></span>
+                            <p className="text-[10px] mt-1 font-medium dark:text-white/60 text-black/60">After you send the money, you need to write to the administrator.</p>
+                          </div>
+                          <Link href={'/'} className="mt-2 px-3 py-2 text-xs font-medium">
+                            Write Administrator
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <p>No blockchain selected</p>
+                  )}
                 </div>
               ) : (
                 <div className="text-white">
@@ -298,10 +378,9 @@ const Pay = () => {
             </div>
           </motion.div>
         )}
-      </AnimatePresence>
-
+      </AnimatePresence >
     </>
-  )
-}
+  );
+};
 
 export default Pay;

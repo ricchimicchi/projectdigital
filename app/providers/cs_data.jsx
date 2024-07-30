@@ -57,8 +57,8 @@ export const blockchainOptions = [
         crypto_network: 'TRC 20',
         crypto_logo: '/payment/payment_logo/usdt_trc20.svg',
         crypto_address: 'TZ9vfPKwzNWpZAXhLjBRR8Dtjhf7CvAf2H',
-        crypto_qr_img_dark: '/payment/payment_qr/usdt_trc20.svg',
-        crypto_qr_img_light: '/payment/payment_qr/usdt_trc20.svg',
+        crypto_qr_img_dark: '/payment/payment_qr/usdt_trc_20_qr.svg',
+        crypto_qr_img_light: '/payment/payment_qr/usdt_trc_20_qr.svg',
         main_amount: '24.99',
     },
     {
@@ -67,8 +67,8 @@ export const blockchainOptions = [
         crypto_network: 'ERC 20',
         crypto_logo: '/payment/payment_logo/usdc_erc20.svg',
         crypto_address: '0x6695e4c6cde885dd76342a8bf46d54ac15f5e12c',
-        crypto_qr_img_dark: '/payment/payment_qr/usdc_erc20.svg',
-        crypto_qr_img_light: '/payment/payment_qr/usdc_erc20.svg',
+        crypto_qr_img_dark: '/payment/payment_qr/usdc_erc_20_qr.svg',
+        crypto_qr_img_light: '/payment/payment_qr/usdc_erc_20_qr.svg',
         main_amount: '24.99',
     },
     {
@@ -77,8 +77,8 @@ export const blockchainOptions = [
         crypto_network: 'ERC 20',
         crypto_logo: '/payment/payment_logo/eth.svg',
         crypto_address: '0x6695e4c6cde885dd76342a8bf46d54ac15f5e12c',
-        crypto_qr_img_dark: '/payment/payment_qr/eth_erc20.svg',
-        crypto_qr_img_light: '/payment/payment_qr/eth_erc20.svg',
+        crypto_qr_img_dark: '/payment/payment_qr/eth_erc_20.svg',
+        crypto_qr_img_light: '/payment/payment_qr/eth_erc_20.svg',
         main_amount: '24.99',
     },
     {

@@ -11,7 +11,6 @@ import Faq from "./ui/Faq";
 
 
 
-
 const anton = Audiowide({ subsets: ["latin"], weight: ['400'] });
 
 export default function Home() {
@@ -76,6 +75,8 @@ export default function Home() {
           <div className="mask-l dark:mask-t pointer-events-none h-[124px] 1xl:h-[40px] -mt-5 absolute -bottom-32 z-50 w-full select-none backdrop-blur-[1px] transition-all 2xl:hidden"></div>
         </div>
         <Faq />
+
+       
       </section>
     </div>
   );
