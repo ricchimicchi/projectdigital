@@ -82,7 +82,7 @@ const Pay = () => {
                         <div className={`${syne.className} font-bold text-xl tracking-tighter text-start max-w-[200px]`}>{e.title}</div>
                         <Image
                           src={e.course_dd_img}
-                          className="pointer-events-none mb-[1px]"
+                          className="pointer-events-none mb-[1px] 1xl:mt-[1px]"
                           width={17}
                           height={17}
                           alt="back"
