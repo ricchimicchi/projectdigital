@@ -31,14 +31,14 @@ export const crschs = [
     {
         id: 1365489,
         title_hd: 'DANIEL HUSTLERS UNIVERITY',
-        title: 'Youtube Full Automation Course',
+        title: 'Youtube Course',
         main_image: '/csr/youtube_tb.svg',
         button_active_status: true,
     },
     {
         id: 1365490,
         title_hd: 'DANIEL HUSTLERS UNIVERITY',
-        title: 'TikTok Creativity Program Full AI Course',
+        title: 'TikTok Course',
         main_image: '/csr/tiktok_tb.svg',
         button_active_status: true,
     },
