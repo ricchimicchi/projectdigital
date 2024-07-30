@@ -63,16 +63,6 @@ export const blockchainOptions = [
     },
     {
         id: 2,
-        crypto_name: 'USDT',
-        crypto_network: 'ERC 20',
-        crypto_logo: '/payment/payment_logo/usdt_erc20.svg',
-        crypto_address: '0x6695e4c6cde885dd76342a8bf46d54ac15f5e12c',
-        crypto_qr_img_dark: '/payment/payment_qr/usdt_erc20.svg',
-        crypto_qr_img_light: '/payment/payment_qr/usdt_erc20.svg',
-        main_amount: '24.99',
-    },
-    {
-        id: 3,
         crypto_name: 'USDC',
         crypto_network: 'ERC 20',
         crypto_logo: '/payment/payment_logo/usdc_erc20.svg',
@@ -82,7 +72,7 @@ export const blockchainOptions = [
         main_amount: '24.99',
     },
     {
-        id: 4,
+        id: 3,
         crypto_name: 'ETH',
         crypto_network: 'ERC 20',
         crypto_logo: '/payment/payment_logo/eth.svg',
@@ -92,7 +82,7 @@ export const blockchainOptions = [
         main_amount: '24.99',
     },
     {
-        id: 5,
+        id: 4,
         crypto_name: 'BNB',
         crypto_network: 'BEP 20',
         crypto_logo: '/payment/payment_logo/bnb.svg',
@@ -102,7 +92,7 @@ export const blockchainOptions = [
         main_amount: '24.99',
     },
     {
-        id: 6,
+        id: 5,
         crypto_name: 'Litecoin',
         crypto_network: 'LTC',
         crypto_logo: '/payment/payment_logo/ltc.svg',
@@ -112,7 +102,7 @@ export const blockchainOptions = [
         main_amount: '24.99',
     },
     {
-        id: 7,
+        id: 6,
         crypto_name: 'Bitcoin',
         crypto_network: 'BTC',
         crypto_logo: '/payment/payment_logo/btc.svg',
@@ -122,7 +112,7 @@ export const blockchainOptions = [
         main_amount: '24.99',
     },
     {
-        id: 8,
+        id: 7,
         crypto_name: 'Toncoin',
         crypto_network: 'TON',
         crypto_logo: '/payment/payment_logo/ton.svg',
