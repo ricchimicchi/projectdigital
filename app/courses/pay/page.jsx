@@ -399,7 +399,7 @@ const Pay = () => {
                   )}
                 </div>
               ) : (
-                <div className="overflow-y-scroll max-w-[340px] mx-auto mt-5 scroll_payment max-h-[500px] 1xl:max-h-[360px]">
+                <div className="overflow-y-scroll max-w-[340px] mx-auto mt-5 scroll_payment max-h-[500px] 1xl:max-h-[420px]">
                   <h3 className={`${anton.className} text-base uppercase font-semibold text-center`}>How to buy an Crypto App using any payment system in the world?</h3>
 
                   <div className="flex flex-col items-center justify-center gap-4 mt-6">
