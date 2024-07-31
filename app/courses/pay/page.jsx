@@ -1,6 +1,6 @@
 'use client'
 
-import { blockchainOptions, crschs } from "@/app/providers/cs_data";
+import { blockchainOptions, crschs, stepbystepCart } from "@/app/providers/cs_data";
 import { Audiowide, Syne } from "next/font/google";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -231,7 +231,7 @@ const Pay = () => {
                     {selectedId === 1 && (
                       <div className="relative mt-2">
                         <div
-                          className="flex items-center justify-between dark:border-white/40 border-[1px] dark:bg-[#15171b] dark:border-white/10' w-full py-3 px-3 rounded-md cursor-pointer select-none"
+                          className="flex items-center justify-between dark:border-white/40 border-[1px] dark:bg-[#15171b] dark:border-white/10' w-full py-3 px-3 rounded-lg cursor-pointer select-none"
                           onClick={() => setIsOpen(!isOpen)}
                         >
                           {selectedOption ? (
@@ -262,7 +262,7 @@ const Pay = () => {
                               animate={{ opacity: 1, y: 0 }}
                               exit={{ opacity: 0, y: -10 }}
                               transition={{ duration: 0.2 }}
-                              className="absolute z-10 w-full mt-[7px] py-2 border-[1px] dark:bg-[#15171b] bg-[#fafafa] cursor-pointer dark:border-white/40  rounded-md shadow-lg max-h-24 overflow-y-scroll no-scrollbar"
+                              className="absolute z-10 w-full mt-[7px] py-2 border-[1px] dark:bg-[#15171b] bg-[#fafafa] cursor-pointer dark:border-white/40 rounded-lg shadow-lg max-h-24 overflow-y-scroll no-scrollbar"
                             >
                               {blockchainOptions.map((option) => (
                                 <div
@@ -399,9 +399,29 @@ const Pay = () => {
                   )}
                 </div>
               ) : (
-                <div className="text-white">
-                  <h2 className="text-2xl mb-4">Payment Details</h2>
-                  <p>Payment details for {pytcrs.find((item) => item.id === selectedId)?.title}</p>
+                <div className="overflow-y-scroll max-w-[340px] mx-auto mt-5 scroll_payment max-h-[500px] 1xl:max-h-[360px]">
+                  <h3 className={`${anton.className} text-base uppercase font-semibold text-center`}>How to buy an Crypto App using any payment system in the world?</h3>
+
+                  <div className="flex flex-col items-center justify-center gap-4 mt-6">
+                    {
+                      stepbystepCart.map(e => (
+                        <div key={e.id} className="pb-5 border-b-[1px] border-white/60">
+                          <h3 className={`${anton.className} font-semibold text-sm uppercase text-center`}>{e.title}</h3>
+                          <p className="text-sm font-medium dark:text-white/60 mt-3 text-center">{e.desc}</p>
+                          <div className="flex items-center justify-center">
+                            <Image
+                              src={e.main_img}
+                              className="pointer-events-none 1xl:max-w-[200px]"
+                              width={300}
+                              height={700}
+                              alt="back"
+                              priority={true}
+                            />
+                          </div>
+                        </div>
+                      ))
+                    }
+                  </div>
                 </div>
               )}
             </div>

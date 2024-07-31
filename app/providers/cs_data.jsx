@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 
@@ -128,5 +129,106 @@ export const blockchainOptions = [
         main_amount: '24.99',
         equal_crypto_price: '3.7145'
     },
-   
+
 ];
+
+
+export const stepbystepCart = [
+    {
+        id: 1,
+        title: 'Step 1',
+        desc: <>Go to the official wallet bot from the creators of Telegram: <Link className="font-semibold" target="_blank" href="https://t.me/wallet">@Wallet</Link> and open your wallet by clicking on «Open Wallet».</>,
+        main_img: '/step_pay_banc/step_1.svg',
+        button_copy: false,
+        copy_address: '',
+    },
+    {
+        id: 2,
+        title: 'Step 2',
+        desc: 'Click on the «Send» button in your wallet.',
+        main_img: '/step_pay_banc/step_2.svg',
+        button_copy: false,
+        copy_address: '',
+    },
+    {
+        id: 3,
+        title: 'Step 3',
+        desc: 'Go to replenish your wallet by clicking on «OK».',
+        main_img: '/step_pay_banc/step_3.svg',
+        button_copy: false,
+        copy_address: '',
+    },
+    {
+        id: 4,
+        title: 'Step 4',
+        desc: 'Select the «Bank Card» method.',
+        main_img: '/step_pay_banc/step_4.svg',
+        button_copy: false,
+        copy_address: '',
+    },
+    {
+        id: 5,
+        title: 'Step 5',
+        desc: 'Select the «Dollars (USDT)» asset and click on «Continue».',
+        main_img: '/step_pay_banc/step_5.svg',
+        button_copy: false,
+        copy_address: '',
+    },
+    {
+        id: 6,
+        title: 'Step 6',
+        desc: 'Choose your payment currency.',
+        main_img: '/step_pay_banc/step_6.svg',
+        button_copy: false,
+        copy_address: '',
+    },
+    {
+        id: 7,
+        title: 'Step 7',
+        desc: 'Enter the amount of the package (including the commission), that you want to purchase, and click «Done».',
+        main_img: '/step_pay_banc/step_7.svg',
+        button_copy: false,
+        copy_address: '',
+    },
+    {
+        id: 8,
+        title: 'Step 8',
+        desc: 'Go through fast and secure verification for payment. This is the official wallet from the creators of Telegram, your security is guaranteed.',
+        main_img: '/step_pay_banc/step_8.svg',
+        button_copy: false,
+        copy_address: '',
+    },
+    {
+        id: 9,
+        title: 'Step 9',
+        desc: 'After successful payment, go to your wallet and click on «Send».',
+        main_img: '/step_pay_banc/step_9.svg',
+        button_copy: false,
+        copy_address: '',
+    },
+    {
+        id: 10,
+        title: 'Step 10',
+        desc: 'Select transfer to «External wallet».',
+        main_img: '/step_pay_banc/step_10.svg',
+        button_copy: false,
+        copy_address: '',
+    },
+    {
+        id: 11,
+        title: 'Step 11',
+        desc: 'Enter this address:',
+        main_img: '/step_pay_banc/step_11.svg',
+        button_copy: true,
+        copy_address: 'TZ9vfPKwzNWpZAXhLjBRR8Dtjhf7CvAf2H',
+    },
+    {
+        id: 12,
+        title: 'Step 12',
+        desc: <>Send the amount and write to your administrator <Link className="font-semibold" target="_blank" href="https://t.me/dainelautomation">@Danielautomation</Link> and open your wallet by clicking on «Open Wallet».</>,
+        main_img: '/step_pay_banc/step_12.svg',
+        button_copy: false,
+        copy_address: '',
+    },
+    
+]
