@@ -62,7 +62,7 @@ const Pay = () => {
     setActiveId(id);
   };
 
-  const [selectedId, setSelectedId] = useState(null);
+  const [selectedId, setSelectedId] = useState(1);
   const [popupOpen, setPopupOpen] = useState(false);
   const [blockchain, setBlockchain] = useState('');
 
@@ -381,7 +381,7 @@ const Pay = () => {
                             <span className="flex items-center justify-center gap-2 font-semibold tracking-tight text-xs text-yellow-500">Warning <PiWarningFill /></span>
                             <p className="text-[10px] mt-1 font-medium dark:text-white/60 text-black/60">After you send the money, you need to write to the administrator.</p>
                           </div>
-                          <Link href={'/'} className="mt-2 px-3 py-2 text-xs font-medium text-center w-full flex items-center justify-center gap-2 border-[1px] dark:border-white/10 border-black/10 rounded-lg transition-all hover:bg-black/5">
+                          <Link href={'/'} className={`${anton.className} uppercase mt-2 px-3 py-2 text-xs font-medium text-center w-full flex items-center justify-center gap-2 border-[1px] dark:border-white/10 border-black/10 rounded-lg transition-all hover:bg-black/5`}>
                             Write Administrator
                             <Image
                               src='/social/telegram.svg'
@@ -395,7 +395,7 @@ const Pay = () => {
                       </div>
                     </div>
                   ) : (
-                    <p>No blockchain selected</p>
+                    <div className="py-5 px-1">No blockchain selected</div>
                   )}
                 </div>
               ) : (
