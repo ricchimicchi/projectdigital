@@ -132,6 +132,16 @@ const Pay = () => {
       });
   };
 
+  const handleCopyAddressStep = () => {
+    navigator.clipboard.writeText('TZ9vfPKwzNWpZAXhLjBRR8Dtjhf7CvAf2H')
+      .then(() => {
+        alert('Copied!');
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  };
+
 
   return (
     <>
@@ -399,15 +409,26 @@ const Pay = () => {
                   )}
                 </div>
               ) : (
-                <div className="overflow-y-scroll max-w-[340px] mx-auto mt-5 scroll_payment max-h-[500px] 1xl:max-h-[420px]">
+                <div className="overflow-y-scroll max-w-[340px] mx-auto mt-5 scroll_payment max-h-[500px] 1xl:max-h-[460px]">
                   <h3 className={`${anton.className} text-base uppercase font-semibold text-center`}>How to buy an Crypto App using any payment system in the world?</h3>
 
                   <div className="flex flex-col items-center justify-center gap-4 mt-6">
                     {
                       stepbystepCart.map(e => (
-                        <div key={e.id} className="pb-5 border-b-[1px] border-white/60">
+                        <div key={e.id} className="pb-5 px-2">
+                          <div className="w-full h-px dark:bg-white/20 bg-black/10 mb-4" />
                           <h3 className={`${anton.className} font-semibold text-sm uppercase text-center`}>{e.title}</h3>
                           <p className="text-sm font-medium dark:text-white/60 mt-3 text-center">{e.desc}</p>
+                          {
+                            e.button_copy && (
+                              <div className="flex mt-3 items-center justify-between gap-6 1xl:gap-4 px-2 py-2 border-[1px] dark:border-white/10 border-black/10 rounded-lg">
+                                <span className="text-[10px] 1xl:text-[9px] font-medium">{e.copy_address}</span>
+                                <button onClick={handleCopyAddressStep}>
+                                  <MdOutlineContentCopy />
+                                </button>
+                              </div>
+                            )
+                          }
                           <div className="flex items-center justify-center">
                             <Image
                               src={e.main_img}

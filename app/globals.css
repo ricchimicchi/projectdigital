@@ -114,7 +114,7 @@ html {
 }
 
 .scroll_payment::-webkit-scrollbar {
-    width: 3px;
+    width: 2px;
 }
 
 .scroll_payment::-webkit-scrollbar-track {
