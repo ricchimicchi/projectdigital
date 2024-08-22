@@ -6,17 +6,31 @@ export const csrdd = [
     {
         id: 1365489,
         title_hd: 'DANIEL HUSTLERS UNIVERITY',
+        title: <>Daniel Crypto <br /> Software V2.0</>,
+        main_description: 'The Secret way making $10.000K',
+        oldPrice: '799.99',
+        newPrice: '299.99',
+        student_now: '675',
+        discount_interest: '62',
+        main_image: '/csr/soft_tb.svg',
+        button_active_status: true,
+        button_text: 'GET NOW'
+    },
+    {
+        id: 1365490,
+        title_hd: 'DANIEL HUSTLERS UNIVERITY',
         title: 'Youtube Full Automation Course',
         main_description: 'The Secret way making $10.000K Faceless',
         oldPrice: '149.99',
         newPrice: '24.99',
+        student_now: '567',
         discount_interest: '83',
         main_image: '/csr/youtube_tb.svg',
         button_active_status: true,
         button_text: 'GET NOW'
     },
     {
-        id: 1365490,
+        id: 1365491,
         title_hd: 'DANIEL HUSTLERS UNIVERITY',
         title: 'TikTok Creativity Program Full AI Course',
         main_description: 'The Secret way making $10.000K Faceless',
@@ -35,13 +49,21 @@ export const crschs = [
     {
         id: 1365489,
         title_hd: 'DANIEL HUSTLERS UNIVERITY',
+        title: 'Crypto Software',
+        main_image: '/csr/soft_tb.svg',
+        course_dd_img: '/social/soft_icon.svg',
+        button_active_status: true,
+    },
+    {
+        id: 1365490,
+        title_hd: 'DANIEL HUSTLERS UNIVERITY',
         title: 'Youtube Course',
         main_image: '/csr/youtube_tb.svg',
         course_dd_img: '/social/youtube_icon.svg',
         button_active_status: true,
     },
     {
-        id: 1365490,
+        id: 1365491,
         title_hd: 'DANIEL HUSTLERS UNIVERITY',
         title: 'TikTok Course',
         main_image: '/csr/tiktok_tb.svg',
@@ -60,8 +82,12 @@ export const blockchainOptions = [
         crypto_address: 'TZ9vfPKwzNWpZAXhLjBRR8Dtjhf7CvAf2H',
         crypto_qr_img_dark: '/payment/payment_qr/usdt_trc_20_qr.svg',
         crypto_qr_img_light: '/payment/payment_qr/usdt_trc_20_qr.svg',
-        main_amount: '24.99',
-        equal_crypto_price: '24.99'
+        soft_price: '299.99',
+        soft_crypto_price: '299.99',
+        yt_price: '24.99',
+        yt_crypto_price: '24.99',
+        tt_price: '24.99',
+        tt_crypto_price: '24.99'
     },
     {
         id: 2,
@@ -71,8 +97,12 @@ export const blockchainOptions = [
         crypto_address: '0x6695e4c6cde885dd76342a8bf46d54ac15f5e12c',
         crypto_qr_img_dark: '/payment/payment_qr/usdc_erc_20_qr.svg',
         crypto_qr_img_light: '/payment/payment_qr/usdc_erc_20_qr.svg',
-        main_amount: '24.99',
-        equal_crypto_price: '24.99'
+        soft_price: '299.99',
+        soft_crypto_price: '299.99',
+        yt_price: '24.99',
+        yt_crypto_price: '24.99',
+        tt_price: '24.99',
+        tt_crypto_price: '24.99'
     },
     {
         id: 3,
@@ -82,8 +112,12 @@ export const blockchainOptions = [
         crypto_address: '0x6695e4c6cde885dd76342a8bf46d54ac15f5e12c',
         crypto_qr_img_dark: '/payment/payment_qr/eth_erc_20.svg',
         crypto_qr_img_light: '/payment/payment_qr/eth_erc_20.svg',
-        main_amount: '24.99',
-        equal_crypto_price: '0.0076'
+        soft_price: '299.99',
+        soft_crypto_price: '0.1143',
+        yt_price: '24.99',
+        yt_crypto_price: '0.009522',
+        tt_price: '24.99',
+        tt_crypto_price: '0.009522'
     },
     {
         id: 4,
@@ -93,8 +127,12 @@ export const blockchainOptions = [
         crypto_address: '0x6695e4c6cde885dd76342a8bf46d54ac15f5e12c',
         crypto_qr_img_dark: '/payment/payment_qr/bnb_qr.svg',
         crypto_qr_img_light: '/payment/payment_qr/bnb_qr.svg',
-        main_amount: '24.99',
-        equal_crypto_price: '0.043'
+        soft_price: '299.99',
+        soft_crypto_price: '0.5114',
+        yt_price: '24.99',
+        yt_crypto_price: '0.0426',
+        tt_price: '24.99',
+        tt_crypto_price: '0.0426'
     },
     {
         id: 5,
@@ -104,8 +142,12 @@ export const blockchainOptions = [
         crypto_address: 'ltc1q7yzy252z76mu07jysjak54zddkqt6qx8dvs6qm',
         crypto_qr_img_dark: '/payment/payment_qr/ltc.svg',
         crypto_qr_img_light: '/payment/payment_qr/ltc.svg',
-        main_amount: '24.99',
-        equal_crypto_price: '0.35'
+        soft_price: '299.99',
+        soft_crypto_price: '4.7020',
+        yt_price: '24.99',
+        yt_crypto_price: '0.3916',
+        tt_price: '24.99',
+        tt_crypto_price: '0.3916'
     },
     {
         id: 6,
@@ -115,8 +157,12 @@ export const blockchainOptions = [
         crypto_address: 'bc1qf9mn8qs2lyw2nafr3smqx2kn9va5czp8qh73mf',
         crypto_qr_img_dark: '/payment/payment_qr/btc.svg',
         crypto_qr_img_light: '/payment/payment_qr/btc.svg',
-        main_amount: '24.99',
-        equal_crypto_price: '0.00038'
+        soft_price: '299.99',
+        soft_crypto_price: '0.00496',
+        yt_price: '24.99',
+        yt_crypto_price: '0.0004136',
+        tt_price: '24.99',
+        tt_crypto_price: '0.0004136'
     },
     {
         id: 7,
@@ -126,8 +172,12 @@ export const blockchainOptions = [
         crypto_address: 'UQAJULOvrREi0O1h7SSw65LQBpStaY9870MjJFI8uMBN27fP',
         crypto_qr_img_dark: '/payment/payment_qr/ton_qr.svg',
         crypto_qr_img_light: '/payment/payment_qr/ton_qr.svg',
-        main_amount: '24.99',
-        equal_crypto_price: '3.7145'
+        soft_price: '299.99',
+        soft_crypto_price: '46.22',
+        yt_price: '24.99',
+        yt_crypto_price: '3.851',
+        tt_price: '24.99',
+        tt_crypto_price: '3.851'
     },
 
 ];

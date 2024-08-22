@@ -116,7 +116,6 @@ export const costumer_data = [
 
 ]
 
-
 export const accordionItems = [
     {
         title: 'Why do you sell Automation and not make money yourself?',

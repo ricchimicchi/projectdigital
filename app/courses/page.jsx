@@ -40,7 +40,7 @@ const Courses = () => {
                     <h1 className={`${anton.className} mt-2 text-center !leading-[52px] 1xl:!leading-[31px] headline text-5xl 1xl:text-3xl font-bold text-white dark:block hidden`}>{`THE CHOICE IS YOURS`}</h1>
                     <h1 className={`${anton.className} mt-2 text-center !leading-[52px] 1xl:!leading-[31px] text-5xl 1xl:text-3xl font-bold text-black dark:hidden`}>{`THE CHOICE IS YOURS`}</h1>
                 </div>
-                <div className="mt-10 grid grid-cols-2 justify-center max-w-[560px] mx-auto gap-4 1xl:grid-cols-1">
+                <div className="mt-10 grid grid-cols-3 justify-center max-w-[900px] mx-auto gap-4 1xl:grid-cols-1">
                     {
                         csrdd.map((e) => (
                             <div key={e.id} className="relative backdrop-blur-xl p-2.5 dark:bg-white/5 dark:hover:bg-white/10 bg-black/5 trs_lg rounded-xl overflow-hidden">

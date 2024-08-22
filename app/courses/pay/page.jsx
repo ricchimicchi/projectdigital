@@ -54,17 +54,29 @@ export const pytcrs = [
 ];
 
 const Pay = () => {
+  const [paysc, setPaysc] = useState(299.99)
+  const [activeButton, setActiveButton] = useState(1)
   const [activeId, setActiveId] = useState(
     crschs.find((course) => course.button_active_status).id
-  );
+  );  
 
   const handleSelect = (id) => {
     setActiveId(id);
+    setPaysc(id === 1365489 ? 299.99 : 24.99);
+
+    if (id === 1365489) {
+      setActiveButton(1);
+    } else if (id === 1365490) {
+      setActiveButton(2);
+    } else if (id === 1365491) {
+      setActiveButton(3);
+    }
   };
 
-  const [selectedId, setSelectedId] = useState(1);
+  const [selectedId, setSelectedId] = useState(null);
   const [popupOpen, setPopupOpen] = useState(false);
   const [blockchain, setBlockchain] = useState('');
+
 
   const handleSelectPayment = (id) => {
     setSelectedId(id);
@@ -89,28 +101,6 @@ const Pay = () => {
 
   const selectedOption = blockchainOptions.find(option => option.crypto_name === selectedBlockchain);
 
-  const initialTime = 3 * 60 * 60 * 1000;
-  const [timeRemaining, setTimeRemaining] = useState(initialTime);
-
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimeRemaining(prevTime => {
-        if (prevTime <= 0) {
-          clearInterval(interval);
-          return 0;
-        }
-        return prevTime - 1000;
-      });
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
-  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
 
   const handleCopyAddress = () => {
     navigator.clipboard.writeText(selectedOption.crypto_address)
@@ -122,15 +112,6 @@ const Pay = () => {
       });
   };
 
-  const handleCopyAmount = () => {
-    navigator.clipboard.writeText(selectedOption.equal_crypto_price)
-      .then(() => {
-        alert('Copied!');
-      })
-      .catch(err => {
-        console.error(err);
-      });
-  };
 
   const handleCopyAddressStep = () => {
     navigator.clipboard.writeText('TZ9vfPKwzNWpZAXhLjBRR8Dtjhf7CvAf2H')
@@ -304,7 +285,7 @@ const Pay = () => {
 
                     <div className="mt-16 flex items-center justify-between w-full">
                       <h4 className={`${anton.className} text-sm font-semibold uppercase`}>Total Price</h4>
-                      <span className={`${anton.className} text-lg font-semibold`}>$24.99 <span className="dark:text-white/60 text-[9px] uppercase">(Lifetime)</span></span>
+                      <span className={`${anton.className} text-lg font-semibold`}>${paysc}<span className="dark:text-white/60 text-[9px] uppercase ml-[1px]">(Lifetime)</span></span>
                     </div>
 
                     <button
@@ -335,7 +316,7 @@ const Pay = () => {
                 <IoClose />
               </button>
               {selectedId === 1 ? (
-                <div className="">
+                <div>
                   {selectedOption ? (
                     <div>
                       <div className="flex items-center justify-center mt-2">
@@ -347,16 +328,7 @@ const Pay = () => {
                           alt='crpt'
                         />
                       </div>
-                      <div className="flex items-center justify-center gap-2 mt-5 1xl:mt-3">
-                        <p className="text-xs font-medium dark:text-white/60">Time left to pay: </p>
-                        <div className="flex items-center gap-[0.01rem]">
-                          <span className="text-sm font-medium">{String(hours).padStart(2, '0')}</span>
-                          <span className="text-sm font-medium">:</span>
-                          <span className="text-sm font-medium">{String(minutes).padStart(2, '0')}</span>
-                          <span className="text-sm font-medium">:</span>
-                          <span className="text-sm font-medium">{String(seconds).padStart(2, '0')}</span>
-                        </div>
-                      </div>
+                      
 
                       <div className="mt-6 1xl:mt-3 tracking-wide">
                         <span className="text-xs font-medium dark:text-white/50">Send to this address</span>
@@ -377,13 +349,23 @@ const Pay = () => {
                               alt='crpt'
                             />
                             <div className="flex items-center gap-0.5">
-                              <span className="text-xs font-medium dark:text-white text-[#18191b]">{selectedOption.equal_crypto_price}</span>
+                              <span className="text-xs font-medium dark:text-white text-[#18191b]">
+                                {
+                                  activeButton === 1 && (
+                                    <span>{selectedOption.soft_crypto_price}</span>
+                                  )
+                                }
+
+                                {
+                                  activeButton === 2 && (
+                                    <span>{selectedOption.yt_crypto_price}</span>
+                                  )
+                                }
+                              </span>
                               <span className="text-xs font-medium dark:text-white text-[#18191b]">{selectedOption.crypto_name}</span>
                               <span className="text-xs font-medium dark:text-white text-[#18191b]">{selectedOption.crypto_network}</span>
                             </div>
-                            <button onClick={handleCopyAmount}>
-                              <MdOutlineContentCopy />
-                            </button>
+
                           </div>
                           <span className="block text-xs font-medium text-center mt-1">Please account for gas fees</span>
 

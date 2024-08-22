@@ -65,7 +65,7 @@ const Choose = () => {
                     <span className="bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent font-medium text-sm text-center block">PAY</span>
                     <div className="flex items-start gap-1 justify-center">
                         <span className="font-bold text-sm block mt-3 bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent">$</span>
-                        <h1 className={`${anton.className} uppercase mt-2 text-center !leading-[31px] text-3xl 1xl:text-2xl font-bold bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent`}>{`24.99`}</h1>
+                        <h1 className={`${anton.className} uppercase mt-2 text-center !leading-[31px] text-3xl 1xl:text-2xl font-bold bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent`}>{`299.99`}</h1>
                         <span className="text-center block mt-2.5 font-semibold text-xs dark:text-white/40">(Lifetime)</span>
                     </div>
                     <p className="max-w-[300px] text-center text-sm font-medium dark:text-white/60 leading-5 mt-2">Immediately tap into a reservoir of cutting-edge knowledge, positioning yourself at the vanguard of innovation and fast-tracking your path to wealth.</p>
@@ -101,12 +101,12 @@ const Choose = () => {
                         <span className="bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent font-medium text-sm text-start block">PAY</span>
                         <div className="flex items-start gap-1 justify-start">
                             <span className="font-bold text-sm block mt-3 bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent">$</span>
-                            <h1 className={`${anton.className} uppercase mt-2 text-start !leading-[31px] text-3xl 1xl:text-2xl font-bold bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent`}>{`24.99`}</h1>
+                            <h1 className={`${anton.className} uppercase mt-2 text-start !leading-[31px] text-3xl 1xl:text-2xl font-bold bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent`}>{`299.99`}</h1>
                             <span className="text-center block mt-3.5 font-semibold text-xs dark:text-white/40">(Lifetime)</span>
                         </div>
                         <p className="max-w-[300px] text-start text-sm font-medium dark:text-white/60 leading-5 mt-2">Immediately tap into a reservoir of cutting-edge knowledge, positioning yourself at the vanguard of innovation and fast-tracking your path to wealth.</p>
                         <div className="relative w-full mt-3">
-                            <Link href="/" className={`${anton.className} dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl rounded-sm border-[3px] border-[#ffca25] px-3 py-2 w-full flex items-center justify-center jn_btn`}>
+                            <Link href="/courses" className={`${anton.className} dark:bg-[#41391a] bg-[#7d6b2c3c] 1xl:rounded-xl rounded-sm border-[3px] border-[#ffca25] px-3 py-2 w-full flex items-center justify-center jn_btn`}>
                                 <div className="flex items-center gap-2">JOIN THE OUR WORLD <BiMoneyWithdraw size={21} className="mb-0.5 1xl:mb-[1px]" /></div>
                             </Link>
                         </div>
