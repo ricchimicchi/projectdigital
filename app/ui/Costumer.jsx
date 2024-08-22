@@ -45,9 +45,13 @@ const Costumer = () => {
                             <div onClick={() => popupcostumerfunc(e.id)} key={e.id} className="relative cursor-pointer max-w-[280px] dark:bg-[#040d11] bg-[#ececec99] group rounded-md hover: border-[1px] border-white/5 overflow-hidden trs_lg">
                                 <Image src='/grid-back.svg' className="pointer-events-none object-cover absolute inset-0 opacity-0 1xl:opacity-100 group-hover:opacity-100 trs_lg w-[290px]" width={290} height={290} alt='costumer_images' />
                                 <Image src='/hero-step/ellipse_1.svg' className="pointer-events-none object-cover absolute z-[100] -top-32 1xl:-top-24 -left-16 opacity-0 1xl:-left-16 1xl:opacity-20 group-hover:opacity-30 trs_lg w-[290px]" width={290} height={290} alt='costumer_images' />
-                                <div className="py-5 px-2 flex items-center gap-2">
-                                    <h2 className={`${syne.className} text-2xl 1xl:text-xl font-bold`}>{e.costumer_name} ~ {e.costumer_age}</h2>
+                                <div className="pt-3 px-2 flex items-center gap-2 1xl:gap-1">
+                                    <h2 className={`${syne.className} text-2xl 1xl:text-base 1xl:leading-[20px] font-bold`}>{e.costumer_name} ~ {e.costumer_age}</h2>
                                     <Image src={e.costumer_flag} className="pointer-events-none rounded-sm" width={25} height={20} alt='costumer_images' />
+                                </div>
+                                <div className="py-1 pb-3 px-2 flex items-center gap-2">
+                                    <h2 className={`${anton.className} text-2xl 1xl:text-base 1xl:leading-[20px] font-bold bg-gradient-to-r from-[#ffcf23] to-[#b07c27] bg-clip-text text-transparent`}>{e.monthly_income}$</h2>
+                                    <span className={`${anton.className} text-xs mt-[1px]`}>Earning</span>
                                 </div>
                                 <div className="w-[280px] h-[180px] relative z-[99]">
                                     <Image src={e.main_result_img} className="pointer-events-none object-cover w-full h-full" width={290} height={290} alt='costumer_images' />
@@ -88,28 +92,13 @@ const Costumer = () => {
                             transition={{ duration: 0.3 }}
                             onClick={() => setPopupCostumer(false)}
                             className="fixed inset-0 dark:bg-black/50 bg-black/5 flex items-center justify-center backdrop-blur-sm z-[999999999]">
-                            <div className="p-6 1xl:p-4 backdrop-blur-xl bg-black/80 rounded-lg relative" onClick={(e) => e.stopPropagation()}>
-                                <button onClick={() => setPopupCostumer(false)} className="text-3xl absolute top-2 right-3 text-white">
+                            <div className="p-6 1xl:p-2 backdrop-blur-xl bg-black/80 rounded-lg relative" onClick={(e) => e.stopPropagation()}>
+                                <button onClick={() => setPopupCostumer(false)} className="text-3xl absolute top-0 right-0 z-[999] text-white">
                                     <IoClose />
                                 </button>
-                                <div className="grid grid-cols-2 2xl:flex 2xl:flex-col-reverse 2xl:items-center 2xl:justify-center gap-9 1xl:gap-4">
-                                    <div className="w-[320px] h-[320px] 1xl:w-[300px] 1xl:h-[200px] relative z-[99]">
-                                        <Image src={filteredCostumerData.main_result_img} className="pointer-events-none object-cover w-full h-full" width={290} height={290} alt='costumer_images' />
-                                    </div>
-                                    <div>
-                                        <div className="flex items-center gap-4">
-                                            <h2 className={`${syne.className} text-4xl 1xl:text-xl font-bold tracking-tighter text-white`}>{filteredCostumerData.costumer_name} ~ {filteredCostumerData.costumer_age}</h2>
-                                            <Image src={filteredCostumerData.costumer_flag} className="pointer-events-none rounded-sm mt-[2px]" width={25} height={20} alt='costumer_images' />
-                                        </div>
-                                        <div className="mt-1">
-                                            <span className="font-semibold text-sm px-[3px] text-white">{filteredCostumerData.costumer_main_join_time} <span className="italic text-white/40 text-xs font-semibold">(Join program date)</span></span>
-                                            <span className="flex items-start mt-2 gap-1">
-                                                <span className={`text-4xl ${anton.className} bg-gradient-to-br from-amber-500 to-yellow-400 bg-clip-text text-transparent`}>{filteredCostumerData.monthly_income}</span>
-                                                <span className="text-amber-500 font-semibold tracking-tight">+/month</span>
-                                            </span>
-                                            <p className="max-w-[300px] font-medium text-sm tracking-tight mt-3 text-white">{filteredCostumerData.costumer_main_comment}</p>
-                                            <span className="text-white/40 text-xs font-semibold">{filteredCostumerData.costumer_main_comment_time}</span>
-                                        </div>
+                                <div>
+                                    <div className="max-w-[320px] max-h-[550px] relative z-[99]">
+                                        <Image src={filteredCostumerData.main_result_img} className="pointer-events-none object-cover w-full h-full border-[1px] rounded-xl border-white/10" width={290} height={290} alt='costumer_images' />
                                     </div>
                                 </div>
                             </div>
