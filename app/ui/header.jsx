@@ -31,7 +31,7 @@ const Header = () => {
                     </Link>
                     <div className="flex items-center gap-4">
                         <Link href={'/courses'} className="uppercase tracking-normal dark:text-white text-sm flex items-center gap-1.5 px-3 py-1.5 dark:bg-white/10 bg-black/5 font-bold rounded-full">
-                            courses <LuBookMarked className="font-extrabold" />
+                            Products <LuBookMarked className="font-extrabold" />
                         </Link>
 
                         <button
